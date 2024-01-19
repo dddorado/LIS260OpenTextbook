@@ -2,16 +2,16 @@ project:
   type: book
 
 book:
-<<<<<<< HEAD
   title: "Information Systems for Librarians and Information Professionals"
-=======
-  title: "test"
->>>>>>> 6481e83d73d87b4f3f7589c15d6468d56ac20b07
-  author: "Norah Jones"
-  date: "11/28/2023"
+  author: "LIS 260"
+  date: "01/19/2023"
   chapters:
     - index.qmd
     - intro.qmd
+    - chap3.qmd
+    - chap4.qmd
+    - chap5.qmd
+    - chap8.qmd
     - summary.qmd
     - references.qmd
 
