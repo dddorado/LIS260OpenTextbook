@@ -148,6 +148,7 @@ There are various types of security measures designed to safeguard data. They ar
 
 Encryption is the process of converting information or data into a code to prevent unauthorized access. This transformation is done using an algorithm and a key, where the algorithm serves as a set of instructions for the encryption and decryption processes, and the key is a piece of information that controls the transformation. The encrypted data can only be decrypted and understood by someone who possesses the correct key.
 The primary purpose of encryption is to ensure the confidentiality and security of sensitive information, such as personal data, financial transactions, and communications. It is widely used in various applications, including secure communication over the internet, protection of sensitive files and data storage, and safeguarding information during electronic transactions. Encryption plays a crucial role in maintaining the privacy and integrity of digital information in an era where cyber threats and unauthorized access are prevalent.
+
 1. Data Erasure
 
 Data erasure, also known as data wiping or data destruction, is the process of securely and permanently removing all data from a storage device, such as a hard drive, solid-state drive (SSD), or other media, to ensure that the information cannot be recovered or accessed by unauthorized individuals. The goal of data erasure is to render the data on the storage device unrecoverable, even with advanced data recovery techniques.
