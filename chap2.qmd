@@ -1,3 +1,2 @@
-# Preface {.unnumbered}
-
+# Secure Information Systems
 This is the class project of LIS 260.
