@@ -71,7 +71,8 @@ Let’s look into probably the most complex component, which is the CPU. The mai
 ```{mermaid}
 flowchart LR
   A[Computer] --> B(CPU)
-  B --> C[Control Unit]
+  B --> D(ALU)
+  D --> C[Control Unit]
 ```
 
 Now that we've delved into the intricacies of computer organization, let's shift our focus to the broader components that constitute it. Let’s examine the contents contained within the confines of the rectangular casing, such as: 
