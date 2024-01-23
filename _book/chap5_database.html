@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -100,7 +101,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chap5_database.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Database Systems and Data Management</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chap5_database.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Database Systems and Data Management</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -133,44 +134,38 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
   <a href="./chap1_historyIS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">History of Information Systems</span></span></a>
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">History of Information Systems</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chap2_secureIS.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Secure Information Systems</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Secure Information Systems</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chap3_corporate.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Corporate and Individual Accountability: Ethical, Legal, and Social Issues</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Corporate and Individual Accountability: Ethical, Legal, and Social Issues</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chap4_hardwaresoftware.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardware and Software</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Hardware and Software</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chap5_database.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Database Systems and Data Management</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Database Systems and Data Management</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./chap8_cloudIoT.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cloud Computing and the Internet of Things</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Cloud Computing and the Internet of Things</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -207,8 +202,6 @@ div.csl-indent {
 </header>
 
 
-<section id="database-systems-and-data-management" class="level1">
-<h1>Database Systems and Data Management</h1>
 <p><em>By the end of this section, you should be able to:</em></p>
 <ul>
 <li>Define Database Systems and Data Management</li>
@@ -217,8 +210,8 @@ div.csl-indent {
 </ul>
 <section id="data-and-data-management" class="level2">
 <h2 class="anchored" data-anchor-id="data-and-data-management">Data and Data Management</h2>
-<p>Data is present everywhere. Whatever we see, consume, hear, feel, smell can be considered data. According to Ackoff R.L., (1989) data is <em>“as products of observation”</em> while information is considered “in descriptions” (R.L. Ackoff, 1989). A cuneiform tablet for instance can be considered data and information at the same time. Being a slab of stone with unintelligible writing is an observation or data that is subject for further investigation while for paleographers it is considered already as information because of their capacity to interpret it in descriptions. Wisdom being as <em>“the ability to increase effectiveness”</em> (R.L. Ackoff, 1989) is how it is important to preserve these cuneiform as it is equal in preserving knowledge and history. Bates argues that information “does not consist of matter and energy but… pattern of organization of matter and energy.”</p>
-<p>Data is the entity that is present among our reality and what we can make sense about. We may choose or ignore data depending if it is a necessity or not. These are raw facts, figures, or entities that can be subject for storage for such utility, hence, such organizations collect a particular set of data that may help them for decisions for their operations. Part of the operations is what we call data management. Data management, according to the definition of Oracle Philippines (2024), <em>“is the practice of collecting, keeping, and using data securely, efficiently, and cost-effectively.”</em> Moreover, <strong>data management</strong> is a process in which information is acquired, stored, retrieved, and utilized within an organization. This involves practices to ensure data throughout its life cycle. Data management consists of the following tasks:</p>
+<p>Data is present everywhere. Whatever we see, consume, hear, feel, smell can be considered data. According to <span class="citation" data-cites="ackoff1989datawisdom">Ackoff (<a href="chap1_historyIS.html#ref-ackoff1989datawisdom" role="doc-biblioref">1989</a>)</span> data is <em>“as products of observation”</em> while information is considered “in descriptions” <span class="citation" data-cites="ackoff1989datawisdom">(<a href="chap1_historyIS.html#ref-ackoff1989datawisdom" role="doc-biblioref">Ackoff 1989</a>)</span>. A cuneiform tablet for instance can be considered data and information at the same time. Being a slab of stone with unintelligible writing is an observation or data that is subject for further investigation while for paleographers it is considered already as information because of their capacity to interpret it in descriptions. Wisdom being as <em>“the ability to increase effectiveness”</em> <span class="citation" data-cites="ackoff1989datawisdom">(<a href="chap1_historyIS.html#ref-ackoff1989datawisdom" role="doc-biblioref">Ackoff 1989</a>)</span> is how it is important to preserve these cuneiform as it is equal in preserving knowledge and history. Bates argues that information “does not consist of matter and energy but… pattern of organization of matter and energy.”</p>
+<p>Data is the entity that is present among our reality and what we can make sense about. We may choose or ignore data depending if it is a necessity or not. These are raw facts, figures, or entities that can be subject for storage for such utility, hence, such organizations collect a particular set of data that may help them for decisions for their operations. Part of the operations is what we call data management. Data management, according to the definition of <span class="citation" data-cites="oracle_data_management">Oracle Cloud Infrastructure (<a href="chap1_historyIS.html#ref-oracle_data_management" role="doc-biblioref">2024</a>)</span>, <em>“is the practice of collecting, keeping, and using data securely, efficiently, and cost-effectively.”</em> Moreover, <strong>data management</strong> is a process in which information is acquired, stored, retrieved, and utilized within an organization. This involves practices to ensure data throughout its life cycle. Data management consists of the following tasks:</p>
 <ul>
 <li>*<strong>Data capture:</strong> the process of collection of data</li>
 <li><strong>Data classification:</strong> the process of classification and segregation of data</li>
@@ -241,7 +234,7 @@ div.csl-indent {
 <p><strong>A. What is a Database?</strong></p>
 <p>A database is a collection of data which is carefully organized. It helps an organization achieve its goal by providing information for managers/ decision makers. It is an important component of information systems that allows the storage, query data, and update. Database uses tables for the organization of information. Data with different elements are then related to each other .</p>
 <p><strong>B. Database Management System</strong></p>
-<p>Database Management System (DBMS)- a group of programs “used to access and manage a database as well as provide an interface between the database and its users and other application processes”. (Reynolds &amp; Stair, 2021)</p>
+<p>Database Management System (DBMS)- a group of programs “used to access and manage a database as well as provide an interface between the database and its users and other application processes”. <span class="citation" data-cites="reynoldsstair2021principles">(<a href="chap1_historyIS.html#ref-reynoldsstair2021principles" role="doc-biblioref">Reynolds and Stair 2021</a>)</span></p>
 <p>Use of High-Quality Data and Database Technology - Companies and organizations take advantage of database technology for analysis and decision-making. Data being used is then organized and consolidated to aid the organization in formulating decisions, thus, increasing productivity , output or profit.</p>
 </section>
 <section id="advantages-and-disadvantages-of-dbms" class="level3">
@@ -283,17 +276,21 @@ div.csl-indent {
 <h2 class="anchored" data-anchor-id="critical-thinking-questions">Critical Thinking Questions:</h2>
 <ol type="1">
 <li>What are the primary considerations for a firm/ organization should a database be utilized?</li>
-<li>What could be the repercussions of moving to a database as a service environment?</li>
+<li>What could be the repercussions of moving to a database as a service environment? ## References</li>
 </ol>
-</section>
-<section id="references" class="level2">
-<h2 class="anchored" data-anchor-id="references">References</h2>
-<div id="refs" role="list">
-
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-ackoff1989datawisdom" class="csl-entry" role="listitem">
+Ackoff, R. L. 1989. <span>“From Data to Wisdom: Presidential Address to ISGSR, June 1988.”</span> <em>Journal of Applied Systems Analysis</em> 16: 3–9.
+</div>
+<div id="ref-oracle_data_management" class="csl-entry" role="listitem">
+Oracle Cloud Infrastructure. 2024. <span>“What Is Data Management?”</span> 2024. <a href="https://www.oracle.com/ph/database/what-is-data-management/#:~:text=Data%20Management%2C%20Defined,-Data%20management%20is&amp;text=Managing%20digital%20data%20in%20an,across%20a%20diverse%20data%20tier">https://www.oracle.com/ph/database/what-is-data-management/#:~:text=Data%20Management%2C%20Defined,-Data%20management%20is&amp;text=Managing%20digital%20data%20in%20an,across%20a%20diverse%20data%20tier</a>.
+</div>
+<div id="ref-reynoldsstair2021principles" class="csl-entry" role="listitem">
+Reynolds, and Stair. 2021. <em>Principles of Information Systems</em>. USA: Course Technology.
+</div>
 </div>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -687,12 +684,12 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./chap4_hardwaresoftware.html" class="pagination-link  aria-label=" &lt;span="" and="" software&lt;="" span&gt;"="">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardware and Software</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Hardware and Software</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chap8_cloudIoT.html" class="pagination-link" aria-label="<span class='chapter-number'>7</span>&nbsp; <span class='chapter-title'>Cloud Computing and the Internet of Things</span>">
-        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cloud Computing and the Internet of Things</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./chap8_cloudIoT.html" class="pagination-link" aria-label="<span class='chapter-number'>6</span>&nbsp; <span class='chapter-title'>Cloud Computing and the Internet of Things</span>">
+        <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Cloud Computing and the Internet of Things</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

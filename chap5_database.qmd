@@ -9,27 +9,31 @@ fig-width: 6
 fig-align: 'center'
 csl: chicago-author-date.csl
 crossref:
-  fig-title: Figure.
-  tbl-title: Table.
-  title-delim: "."
+ fig-title: Figure.
+ tbl-title: Table.
+ title-delim: "."
 toc: false
 editor: visual
 ---
 
 
-# Database Systems and Data Management
 
 *By the end of this section, you should be able to:*
+
 
 * Define Database Systems and Data Management
 * Familiarize of how a database system works
 * Explain the importance of an effective data management for an organization
 
-## Data and Data Management 
 
-Data is present everywhere. Whatever we see, consume, hear, feel, smell can be considered data. According to Ackoff R.L., (1989) data is *“as products of observation”* while information is considered “in descriptions” (R.L. Ackoff, 1989). A cuneiform tablet for instance can be considered data and information at the same time. Being a slab of stone with unintelligible writing is an observation or data that is subject for further investigation while for paleographers it is considered already as information because of their capacity to interpret it in descriptions. Wisdom being as *“the ability to increase effectiveness”* (R.L. Ackoff, 1989) is how it is important to preserve these cuneiform as it is equal in preserving knowledge and history. Bates argues that information “does not consist of matter and energy but... pattern of organization of matter and energy.” 
+## Data and Data Management
 
-Data is the entity that is present among our reality and what we can make sense about. We may choose or ignore data depending if it is a necessity or not. These are raw facts, figures, or entities that can be subject  for storage for such utility, hence, such organizations collect a particular set of data that may help them for decisions for their operations. Part of the operations is what we call data management. Data management, according to the definition of Oracle Philippines (2024),  *“is the practice of collecting, keeping, and using data securely, efficiently, and cost-effectively.”* Moreover, **data management** is a process in which information is acquired, stored, retrieved, and utilized within an organization. This involves practices to ensure data throughout its life cycle. Data management consists of the following tasks: 
+
+Data is present everywhere. Whatever we see, consume, hear, feel, smell can be considered data. According to @ackoff1989datawisdom data is *“as products of observation”* while information is considered “in descriptions” [@ackoff1989datawisdom]. A cuneiform tablet for instance can be considered data and information at the same time. Being a slab of stone with unintelligible writing is an observation or data that is subject for further investigation while for paleographers it is considered already as information because of their capacity to interpret it in descriptions. Wisdom being as *“the ability to increase effectiveness”* [@ackoff1989datawisdom] is how it is important to preserve these cuneiform as it is equal in preserving knowledge and history. Bates argues that information “does not consist of matter and energy but... pattern of organization of matter and energy.”
+
+
+Data is the entity that is present among our reality and what we can make sense about. We may choose or ignore data depending if it is a necessity or not. These are raw facts, figures, or entities that can be subject  for storage for such utility, hence, such organizations collect a particular set of data that may help them for decisions for their operations. Part of the operations is what we call data management. Data management, according to the definition of @oracle_data_management,  *“is the practice of collecting, keeping, and using data securely, efficiently, and cost-effectively.”* Moreover, **data management** is a process in which information is acquired, stored, retrieved, and utilized within an organization. This involves practices to ensure data throughout its life cycle. Data management consists of the following tasks:
+
 
 - ***Data capture:** the process of collection of data
 - **Data classification:** the process of classification and segregation of data
@@ -40,29 +44,38 @@ Data is the entity that is present among our reality and what we can make sense 
 - **Data Verification:** the process of checking error in data before its storage
 - **Data Coding:** for easier reference, data undergoes coding
 - **Data Editing:** modification of data for presentation
-- **Data transcription:** conversion of data from one form into another. 
-- **Data transmission:** transmission or transfer of data where it will be forwarded to another place for other functions. 
+- **Data transcription:** conversion of data from one form into another.
+- **Data transmission:** transmission or transfer of data where it will be forwarded to another place for other functions.
 
-Through effective data management, high-quality data is secured and this is beneficial for the organization.  Some of which are: (1) Improve decision making, (2) increase Customer Satisfaction, (3) Increase Sales, (4) Improve Innovation, (5) Raise Productivity, and (6) Ensure Compliance. Data being organized and processed will have an additional value beyond its intrinsic value. This collection of data is called information. According to… the nine characteristics of quality formation are being 1. Accessible, 2. Accurate, 3. Complete, 4. Economical, 5. Relevant, 6. Reliable, 7. Secure,. 8. Timely, 9. Verifiable. 
 
-## Data Lifecycle: 
+Through effective data management, high-quality data is secured and this is beneficial for the organization.  Some of which are: (1) Improve decision making, (2) increase Customer Satisfaction, (3) Increase Sales, (4) Improve Innovation, (5) Raise Productivity, and (6) Ensure Compliance. Data being organized and processed will have an additional value beyond its intrinsic value. This collection of data is called information. According to… the nine characteristics of quality formation are being 1. Accessible, 2. Accurate, 3. Complete, 4. Economical, 5. Relevant, 6. Reliable, 7. Secure,. 8. Timely, 9. Verifiable.
+
+
+## Data Lifecycle:
+
 
 ### Database Systems
 
+
 **A. What is a Database?**
-	
-A database is a collection of data which is carefully organized. It helps an organization achieve its goal by providing information for managers/ decision makers. It is an important component of information systems that allows the storage, query data, and update. Database uses tables for the organization of information. Data with different elements are then related to each other . 
+  
+A database is a collection of data which is carefully organized. It helps an organization achieve its goal by providing information for managers/ decision makers. It is an important component of information systems that allows the storage, query data, and update. Database uses tables for the organization of information. Data with different elements are then related to each other .
+
 
 **B. Database Management System**
 
-Database Management System (DBMS)- a group of programs “used to access and manage a database as well as provide an interface between the database and its users and other application processes”. (Reynolds & Stair, 2021)
-	
+
+Database Management System (DBMS)- a group of programs “used to access and manage a database as well as provide an interface between the database and its users and other application processes”. [@reynoldsstair2021principles]
+  
 Use of High-Quality Data  and Database Technology
-- Companies and organizations take advantage of database technology for analysis and decision-making. Data being used is then organized and consolidated to aid the organization in formulating decisions, thus, increasing productivity , output or profit. 
+- Companies and organizations take advantage of database technology for analysis and decision-making. Data being used is then organized and consolidated to aid the organization in formulating decisions, thus, increasing productivity , output or profit.
+
 
 ### Advantages and Disadvantages of DBMS
 
+
 #### Advantages
+
 
 - **Controlling of Redundancy** - prevention of duplication of data.
 - **Improved Data Sharing**
@@ -74,27 +87,35 @@ Use of High-Quality Data  and Database Technology
 - **Data Independence**
 - **Reduced Application Development and Maintenance Time**
 
+
 #### Disadvantages:
+
 
 - **Complexity** -designers and developers require knowledge about software because it  is multi-functional.
 - **Demand for large memory** - because of its complex nature, large memory is needed.
 - **Centralized system**
 - **DBMS are generalized software.**
 
+
 ## Hypothetical Situation:
 
-Consider this scenario, a retail company utilizes a DBMS to have a better operation and provide better customer experience. For example, ITC retail faces a ;lot of challenges like inventory management, tracking of customer purchase, and analysis of sales trends. ITC retail then implements a DBMS to streamline processes, imr\prove data accuracy, and gain valuable insights from consumer behavior. In order to make this possible, ITC retail deployed a relational database system to manage its inventory, sales, and customer information. Since it has a lot of branches, each store has a local database that synchronizes with a central database in real-time. With this method, consistent and updated information all throughout the stores are being provided for. 
+
+Consider this scenario, a retail company utilizes a DBMS to have a better operation and provide better customer experience. For example, ITC retail faces a ;lot of challenges like inventory management, tracking of customer purchase, and analysis of sales trends. ITC retail then implements a DBMS to streamline processes, imr\prove data accuracy, and gain valuable insights from consumer behavior. In order to make this possible, ITC retail deployed a relational database system to manage its inventory, sales, and customer information. Since it has a lot of branches, each store has a local database that synchronizes with a central database in real-time. With this method, consistent and updated information all throughout the stores are being provided for.
 
 
-## Conclusion: 
 
-Database systems allow the capturing of data for it to be modified, stored, updated and be subject to analysis and decision-making. Since data may present us with variables that help organizations to identify factors that may help them improve operations or formulate strategy. The integration of DBMS and effective data management has become integral for modern organizations and firms especially in the midst of the complexities of the information age. Businesses from various sectors utilize DBMS to centralize, organize, consolidate data for strategic decision-making, security, provide better customer service, and a more efficient operation. Moreover, database and data management does not only improve internal operations but also foster innovation that enables them to adapt in an ever-changing market landscape. DBMS will remain as a tool to unlock the full potential of organizations where information is an important driver for innovation and success. 
+
+## Conclusion:
+
+
+Database systems allow the capturing of data for it to be modified, stored, updated and be subject to analysis and decision-making. Since data may present us with variables that help organizations to identify factors that may help them improve operations or formulate strategy. The integration of DBMS and effective data management has become integral for modern organizations and firms especially in the midst of the complexities of the information age. Businesses from various sectors utilize DBMS to centralize, organize, consolidate data for strategic decision-making, security, provide better customer service, and a more efficient operation. Moreover, database and data management does not only improve internal operations but also foster innovation that enables them to adapt in an ever-changing market landscape. DBMS will remain as a tool to unlock the full potential of organizations where information is an important driver for innovation and success.
+
+
 
 
 ## Critical Thinking Questions:
-1. What are the primary considerations for a firm/ organization should a database be utilized? 
+1. What are the primary considerations for a firm/ organization should a database be utilized?
 2. What could be the repercussions of moving to a database as a service environment?
-
 ## References
 
 ::: {#refs}

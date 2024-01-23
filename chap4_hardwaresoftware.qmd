@@ -9,19 +9,20 @@ fig-width: 6
 fig-align: 'center'
 csl: chicago-author-date.csl
 crossref:
-  fig-title: Figure.
-  tbl-title: Table.
-  title-delim: "."
+ fig-title: Figure.
+ tbl-title: Table.
+ title-delim: "."
 toc: false
 editor: visual
 ---
 
 
-# Hardware and Software
 
 ## Learning Objectives
 
+
 *After studying this chapter, you should be able to:*
+
 
 * Explain the organization of a computing system and understand the relationships and interactions between hardware components.
 * Define the general functions and identify key hardware components, including central processing units (CPUs), memory, and input and output devices.
@@ -29,154 +30,205 @@ editor: visual
 * Understand fundamental programming concepts, such as algorithms, variables, control structures, and data types.
 * Explain the symbiotic relationship between hardware and software in computing systems.
 
+
 ## Introduction
 
-As we study information science, it is essential to establish a comprehensive understanding of the fundamental technologies inherent to information systems. This chapter serves as a guide to explore a computing system, particularly the computer system, with a central focus on its two primary categories: hardware and software. This foundational knowledge serves as the prerequisite to discern the intricate functions that govern digital information. 
+
+As we study information science, it is essential to establish a comprehensive understanding of the fundamental technologies inherent to information systems. This chapter serves as a guide to explore a computing system, particularly the computer system, with a central focus on its two primary categories: hardware and software. This foundational knowledge serves as the prerequisite to discern the intricate functions that govern digital information.
+
 
 By exploring the specifics of hardware and software, we pave the way to identify potential innovations and improvements. As these technological components form the backbone influencing the landscape of information science – without the nuanced understanding of these fundamental elements, our ability to navigate and contribute meaningfully to the advancements in digital information would be constrained.
 
+
 When we talk about computers, our minds naturally conjure up images of tangible elements such as a monitor, a keyboard, a mouse, and other electronic components neatly enclosed within a rectangular casing. To put it simply, this is what we call **Hardware**. To give it a proper definition, the hardware refers to the physical components of an analog or digital computer system or electronic devices. These are the machinery, circuits, and devices that constitute the computer’s physical structure and enable it to function. While we commonly associate hardware with personal computers, it actually permeates an extensive array of computing systems and electronic devices such as mobile devices, point-of-sale devices, self-service checkout machines, automated kiosks, gaming consoles, medical devices, and others.
- 
 Yet, these components and devices are merely manufactured silicon, aluminum, or copper. There exists a crucial counterpart to this physicality: the **Software**. It is the software of a system that breathes life into these mechanical structures, transforming it to dynamic and intelligent tools. Software refers to the intangible set of instructions, programs, or data that tells the computing system to execute specific tasks or operations. It comes into the form of code written in programming languages, applications, operating systems, and other system utilities. A computing device can only properly function when both hardware and software work together.
+
 
 The sophisticated nature of a computer system makes it difficult to fully understand from the outset. A key to it is to look into the hierarchical nature inherent in complex systems. This hierarchical system refers to the arrangement of interrelated subsystems in a structured hierarchy or top-down layers. Think of it as a set of nested categories, starting with a general category at the top and becoming more specific as you go down. This way of organizing is helpful in defining its design and description. The overarching concepts can be systematically dissected and streamlined individually, contingent upon the specific level under consideration. At each level, the focus is directed towards two essential aspects: the structure and the function. **Structure** is defined as the arrangement and interrelationship of components within the system. It is the spatial configuration or organizational framework that tells how different parts of a system interact. **Function** is defined as the role of each individual component within the system. It is the operations, activities, or tasks that the individual component performs [@stallings2016computer].
 
+
 Now that we understand how systems are generally organized, let us dive into the actual basics. This chapter will cover key concepts, including:
 
-* Hardware
-  + Internal Hardware
-  + Computer Architecture and Organization
-  + Input and Output Devices
-* Software
-  + Operating Systems
-  + Libraries/Utilities
-  + Applications
-  + Programming Languages
 
-## Hardware 
+* Hardware
+ + Internal Hardware
+ + Computer Architecture and Organization
+ + Input and Output Devices
+* Software
+ + Operating Systems
+ + Libraries/Utilities
+ + Applications
+ + Programming Languages
+
+
+## Hardware
 In general, a computer system can perform four (4) basic functions:
 
-1. **Data processing** involves the collection of data into the system and the conversion of it into functional information for the system to utilize. 
-2. **Data storage** is the organized storing or holding of data within the system enabling the system or user to retrieve it when needed. 
+
+1. **Data processing** involves the collection of data into the system and the conversion of it into functional information for the system to utilize.
+2. **Data storage** is the organized storing or holding of data within the system enabling the system or user to retrieve it when needed.
 3. **Data movement** is the process of transporting data from one location to another, facilitating communication.
 4. **Control** manages the flow of data and execution of instructions between different components of the system.
 
+
 To enable the computer to execute these functions seamlessly, it relies on a set of integral structural components. A traditional computer with a single processor has four (4) main ones:
 
+
 1. A **central processing unit (CPU)**, or **processor**, which controls the operation of a computer and processes the data to execute the instructions for the system to function. It is the core element that drives the computational capabilities of a computer.
-2. **Main memory** refers to the electronic storage where data and instructions are stored for processing. 
-3. **Input and output** devices, collectively referred to as **I/O**, communicate the data or signal between a computer system and its external environment. 
-    i) *Input* refers to the data received by the computer, while 
-    i) *Output* refers to the data that the computer sends to its external devices.
-4. **System interconnection** refers to the physical links that connect various components within a computer system, enabling them to communicate and work together. 
-    i) A *system bus* is a communication system that consists of conducting wires with all other components attached to it to transmit data within the computer. 
-    i) A *networking infrastructure* is also a type of system interconnection that allows multiple systems to communicate with each other.
+2. **Main memory** refers to the electronic storage where data and instructions are stored for processing.
+3. **Input and output** devices, collectively referred to as **I/O**, communicate the data or signal between a computer system and its external environment.
+   i) *Input* refers to the data received by the computer, while
+   i) *Output* refers to the data that the computer sends to its external devices.
+4. **System interconnection** refers to the physical links that connect various components within a computer system, enabling them to communicate and work together.
+   i) A *system bus* is a communication system that consists of conducting wires with all other components attached to it to transmit data within the computer.
+   i) A *networking infrastructure* is also a type of system interconnection that allows multiple systems to communicate with each other.
 
-These components form the internal and external elements of a computer, with the internal parts referred to as components and the external hardware components known as peripherals. There may be one or more of each of these components. If there is more than one processor, then it is called a multicore computer [@stallings2016computer; @weiser1999og]. 
 
-5. A **core** is added to its structure which consists of all the processors inside a single chip. 
+These components form the internal and external elements of a computer, with the internal parts referred to as components and the external hardware components known as peripherals. There may be one or more of each of these components. If there is more than one processor, then it is called a multicore computer [@stallings2016computer; @weiser1999og].
+
+
+5. A **core** is added to its structure which consists of all the processors inside a single chip.
 6. Multicore computers also use multiple layers or memory called **cache**. This is a smaller version of the main memory, enabling the system to access data faster than storing it in the main memory.
+
 
 Let’s look into probably the most complex component, which is the CPU. The main structure of the CPU consists of the following units:
 
+
 1. The **control unit** manages the overall operations of the CPU, processing the data and executing the instructions.
-2. The **arithmetic and logic unit (ALU)** performs the actual data processing of the system i.e. the arithmetic (addition, subtraction, multiplication, and division) and logical (AND, OR, NOT, XOR) operations. 
+2. The **arithmetic and logic unit (ALU)** performs the actual data processing of the system i.e. the arithmetic (addition, subtraction, multiplication, and division) and logical (AND, OR, NOT, XOR) operations.
 3. The **registers** are what serves as the internal storage of the CPU.
-4. **CPU interconnection** is the communication between the mechanisms within the CPU. 
+4. **CPU interconnection** is the communication between the mechanisms within the CPU.
+
 
 ```{mermaid}
 flowchart LR
-    Computer["`**Computer**
-    I/O
-    Main Memory
-    System Bus
-    CPU`"]
-    CPU["`**CPU**
-    ALU
-    Registers
-    Internal Bus
-    Control Unit`"]
-    ControlUnit["`**Control Unit**`"]
-    Computer --> CPU --> ControlUnit
+   Computer["`**Computer**
+   I/O
+   Main Memory
+   System Bus
+   CPU`"]
+   CPU["`**CPU**
+   ALU
+   Registers
+   Internal Bus
+   Control Unit`"]
+   ControlUnit["`**Control Unit**`"]
+   Computer --> CPU --> ControlUnit
 ```
+Figure 1.0: Computer Architecture
 
-Now that we've delved into the intricacies of computer organization, let's shift our focus to the broader components that constitute it. Let’s examine the contents contained within the confines of the rectangular casing, such as: 
+
+Now that we've delved into the intricacies of computer organization, let's shift our focus to the broader components that constitute it. Let’s examine the contents contained within the confines of the rectangular casing, such as:
 1. The **motherboard** is a printed circuit board (PCB) that contains the CPU and all other components, serving as the main hub for the computer.
 2. The **CPU**, as aforementioned, is the core of the computer’s processes to execute instructions.
 3. To facilitate the storage and preservation of the memory, the computer has three (3) primary components:
 
-* *Random access memory (RAM)* is essentially the volatile memory of the computer. Memory is temporarily stored here for quick access and easy manipulation. When the computer powers off, data is cleared. 
+
+* *Random access memory (RAM)* is essentially the volatile memory of the computer. Memory is temporarily stored here for quick access and easy manipulation. When the computer powers off, data is cleared.
 * *Solid state drive (SSD)* is a non-volatile memory, but it uses flash memory to provide quick access to frequently used data. This memory is still stored even when the computer is powered off.
-* *Hard drive* is also a non-volatile memory that is high-capacity for long-term data retention. Files, documents, or applications are stored in this physical drive. 
+* *Hard drive* is also a non-volatile memory that is high-capacity for long-term data retention. Files, documents, or applications are stored in this physical drive.
 4. Graphic Processing Units, Network Interface Cards, ports, power supplies, transistors, and chips, all of which fall under the umbrella of internal hardware.
 
-For the components to effectively acquire data to process and present information, peripheral devices, or external hardware. These are the I/O devices that serve as conduits for the exchange of data [@Awati2021bz]. 
+
+For the components to effectively acquire data to process and present information, peripheral devices, or external hardware. These are the I/O devices that serve as conduits for the exchange of data [@Awati2021bz].
 Common input devices include:
 
+
 1. A **keyboard** is used to input text, numbers, special characters, and commands. It has a set of keys that represent a character, symbol, or function such as navigation (up, down, left, right), modifier (shift, ctrl, cmd, alt), or others (media playback, brightness, etc)
-2. A **mouse** is a pointing device that provides the user to navigate the interface and interact with elements with a cursor. 
+2. A **mouse** is a pointing device that provides the user to navigate the interface and interact with elements with a cursor.
 3. Microphones, cameras, touchpads, flash drives, and memory cards are also examples of input devices.
+
 
 Common output devices include [@gilster2001pc]:
 
-1. A **monitor** is a device akin to a television screen to display information graphically generated by the computer system. 
+
+1. A **monitor** is a device akin to a television screen to display information graphically generated by the computer system.
 2. A **printer** renders digital data into printed material.
 3. A **speaker** serves as an audio output device.
+
 
 Now, let's transition our focus from hardware to the software, exploring the vital elements that drive the functionality of computer systems [@stallings2016computer].
 
 
+
+
 ## Software
 
-Software used to be in a rudimentary format, primarily designed for specific numerical calculations or other simple data processing tasks. To execute calculations, switches and circuits were manually set. However, as computers grew smarter and transitioned from a hardware-centric approach came the provision of the software [@englander2021mq; @keutzer1994he]. 
 
-There are two (2) types of software in a computer: 
-1. **System software** facilitates the connection between hardware components and the application software. It manages the hardware components by executing tasks such as maintaining or organizing data. It is designed to load programs, move data to peripheral devices to perform computations, and fundamentally, provide an interface for interacting with the computer hardware. It is the infrastructure of the computer. 
-2. **Application software** provides a platform for end user programs of a computer system. The interface it provides allows users to directly interact with the computer system through various programs that are developed to meet the user requirements and preferences. This comes in applications such as productivity, entertainment, communication, or any specialized tasks. 
+Software used to be in a rudimentary format, primarily designed for specific numerical calculations or other simple data processing tasks. To execute calculations, switches and circuits were manually set. However, as computers grew smarter and transitioned from a hardware-centric approach came the provision of the software [@englander2021mq; @keutzer1994he].
+
+
+There are two (2) types of software in a computer:
+1. **System software** facilitates the connection between hardware components and the application software. It manages the hardware components by executing tasks such as maintaining or organizing data. It is designed to load programs, move data to peripheral devices to perform computations, and fundamentally, provide an interface for interacting with the computer hardware. It is the infrastructure of the computer.
+2. **Application software** provides a platform for end user programs of a computer system. The interface it provides allows users to directly interact with the computer system through various programs that are developed to meet the user requirements and preferences. This comes in applications such as productivity, entertainment, communication, or any specialized tasks.
 3. **Libraries** are collections of reusable, pre-written code, functions, and programs that can be used to perform basic and common tasks without the need for writing the code from scratch again.
 4. **Utilities** are software programs that perform tasks related to system management or maintenance. This usually comes in the form of an interface or scripting language that the user has to encode to carry out functions such as compressing files, system diagnostics, or checking information about your device.
-5. **Middleware** is the intermediary layer between different computer applications or components. It is a software that allows different applications to interact with each other, exchanging data and information, even if they are built in different frameworks. 
+5. **Middleware** is the intermediary layer between different computer applications or components. It is a software that allows different applications to interact with each other, exchanging data and information, even if they are built in different frameworks.
 6. **Development Software** are the tools and programs that allow the development, design, test, and maintenance of software applications. Typically, it is an environment where code can be written, debugged, and managed. An example of this would be an Integrated Development Environments (IDEs).
-7. **Database Management Systems (DBMS)** are softwares that manage data. It comes with a provision of an interface where users and applications can interact with databases through CRUD, or “create, read, update, and delete” functions. DBMS is also in charge of data integrity, security and other data handling methods [@englander2021mq; @abelson1996qc]. 
+7. **Database Management Systems (DBMS)** are softwares that manage data. It comes with a provision of an interface where users and applications can interact with databases through CRUD, or “create, read, update, and delete” functions. DBMS is also in charge of data integrity, security and other data handling methods [@englander2021mq; @abelson1996qc].
 
 
+| | |
+|--------------|-------------------------------------------|
+| **Software** | Application Programs                      |
+|              | Library Utilities                         |
+|              | Operating Systems                         |
+| **Hardware** | Execution Hardware                        |
+|              | System Bus \| Memory Translation          |
+|              | I/O Devices and Networking \| Main Memory |
+| | |
+Figure 2.0: Hardware and Software
 
-Figure visualizes how the hardware and software interact with each other. Generally, end users do not need to concern themselves with the low-level architecture of the computer as the computer system itself is perceived as applications that they use. The operating system (OS) serves to conceal the intricacies of the hardware from the end user. It provides a convenient  interface where applications and computer hardware interact. Its primary objectives include optimizing the utilization of the computer resources, and enhancing the user experience of the entire computer system. Examples of these operating systems include Windows, macOS, and Linux. In mobile systems, we also have the likes of iOS and Android [@stallings2016computer]. 
+
+Figure 2.0 visualizes how the hardware and software interact with each other. Generally, end users do not need to concern themselves with the low-level architecture of the computer as the computer system itself is perceived as applications that they use. The operating system (OS) serves to conceal the intricacies of the hardware from the end user. It provides a convenient  interface where applications and computer hardware interact. Its primary objectives include optimizing the utilization of the computer resources, and enhancing the user experience of the entire computer system. Examples of these operating systems include Windows, macOS, and Linux. In mobile systems, we also have the likes of iOS and Android [@stallings2016computer].
+
 
 In essence, the OS allows the following functions:
+
 
 - Instruction set architecture (ISA) is a repository of machine language instructions that a computer follows. This serves as the main boundary between hardware and software.
 - The OS allows the management and creation of programs or utilities. It loads the instructions and data into the main memory, initializes I/O devices by handling the instructions or control signals for the programs, and controlling the access to the entire system to name a few.
 
+
 Now that we have a general understanding of what operating systems typically do, let's delve into how software effectively communicates with hardware. This communication involves the translation of instructions expressed in programming languages, which serve as intermediaries between the human-readable code crafted by programmers and the machine code executed by the CPU.
 
-**Programming languages** can be broadly categorized into two types: *high-level languages*, which are human-readable and writable, and *low-level languages*, encompassing machine and assembly languages understood by the computer. 
 
-Additionally, there are also programming paradigms that are overarching styles of how tasks can be structured and executed [@sebesta2015ek; @cocca2022dn]. 
+**Programming languages** can be broadly categorized into two types: *high-level languages*, which are human-readable and writable, and *low-level languages*, encompassing machine and assembly languages understood by the computer.
+
+
+Additionally, there are also programming paradigms that are overarching styles of how tasks can be structured and executed [@sebesta2015ek; @cocca2022dn].
+
 
 Common paradigms include:
+
 
 1. *Imperative Programming* consists of sets of instructions that explicitly dictates the computer what to do. It emphasizes on how the program should achieve a result through a step-by-step procedure.
 2. **Declarative programming**, on the other hand, does not specify a control flow for the logic of a computation. It simply tells the program what result we are expecting.
 **Functional programming** is a declarative type that focuses on mathematical functions, immutability, and avoids changing-states.
-**Object-Oriented Programming (OOP)**, as its name suggests, organizes code into objects that are instances of classes. It focuses on several concepts such as inheritance, encapsulation, and polymorphism. 
+**Object-Oriented Programming (OOP)**, as its name suggests, organizes code into objects that are instances of classes. It focuses on several concepts such as inheritance, encapsulation, and polymorphism.
+
 
 Other paradigms are procedural and generic.
 
+
 Here are some popular programming languages [@sebesta2015ek; @cocca2022dn]:
+
 
 - **Machine Language** is a low-level language that comprises binary numeric codes that represent computer-executable operations. It utilizes binary digits (0s and 1s), known as bits. These bits represent both instructions and data, translating the instructions and data directly into electronic signals. The computer understands this binary representation due to its electronic nature. In computing, information processing occurs through electronic circuits transitioning in two states: on (1) or off (0), so this binary representation in machine language reflects different electrical states within the computer's circuitry, indicating which operations should be performed, such as addition, subtraction, or data movement between memory locations.
 - **Assembly Language** is a low-level, imperative language that consists of mnemonic codes to represent operations and introduce the naming of memory blocks. For instance, if machine language code expresses addition as '01100110 00001010,' the corresponding assembly code line could read 'ADD R2, R0, R1.' For those delving more deeply into computer architecture, mastering assembly language becomes crucial.
 - **Python** is a high-level, multi-paradigm (functional, OOP), general-purpose language that is distinctly readable and clear. It is an interpreted language, meaning instructions can be executed without a compiler. Python’s code structure relies on indentation to define functions, loops, or classes. It is highly versatile and commonly used in web development, mathematics, and data analytics.
-- **C++** is another popular high-level, general-purpose, multi-paradigm (procedural, OOP) language that is actually an extension of another programming language, C. It is often used for creating large-scale applications as it provides a low-level access to memory. With this, it can actually be a mid-level language as it offers high-level abstraction, but also direct manipulation to the hardware resources. 
-- **Structured Query Language (SQL)** is a high-level, declarative language that is used in managing and manipulating relational databases. It allows users to specifically detail what data to retrieve or change. 
+- **C++** is another popular high-level, general-purpose, multi-paradigm (procedural, OOP) language that is actually an extension of another programming language, C. It is often used for creating large-scale applications as it provides a low-level access to memory. With this, it can actually be a mid-level language as it offers high-level abstraction, but also direct manipulation to the hardware resources.
+- **Structured Query Language (SQL)** is a high-level, declarative language that is used in managing and manipulating relational databases. It allows users to specifically detail what data to retrieve or change.
+
 
 Now that we have explored the different types of programming languages, each with its unique characteristics and applications, it becomes evident that understanding fundamental programming concepts is the universal foundation in effective software development.
 
 
+
+
 1. **Algorithms** are step-by-step procedures that solve specific problems or perform precise mathematical functions such as sorting, sequencing, etc. Algorithms are not the code itself, but rather, it is the logic on how a desired output will be produced with the given input. Key aspects of algorithms are time execution and data storage requirements as these will dictate its efficiency when processed. Examples would be sorting algorithms, searching algorithms, and recursive algorithms.
- 
-2. A **variable** is generally a memory location where you can store and retrieve data from. When declaring a variable, you often provide a short, but descriptive, name and assign a value it will hold. 
+2. A **variable** is generally a memory location where you can store and retrieve data from. When declaring a variable, you often provide a short, but descriptive, name and assign a value it will hold.
+
 
 3. **Data types** define what type of value a variable holds. It has different memory requirements, capacity, and operations that can be performed on it. Basic data types include:
 - *Integers:* whole numbers such as -2, 0, or 1980.
@@ -184,37 +236,75 @@ Now that we have explored the different types of programming languages, each wit
 - *Boolean:* true or false, which can also be represented by 1 or 0, respectively.
 - *String:* text or sequence of characters like “hello” or “hello_world123”
 
+
 4. **Control Structure** determine the flow of the program execution. These are statements that allow the system to select an alternative control flow path or trigger a repeated execution of statements. Common control structures include:
 Selection statements which instructs the computer to make a division when given certain conditions e.g. an if-then statement, or if-else statement.
 Iterative statements, or loops, cause a statement to be executed multiple times depending on the condition e.g. for loops.
 
 
+
+
 This chapter provides a foundational glimpse into the complexity and the symbiotic relationship of hardware and software. As we conclude this chapter,  it should have offered you a broad overview of their functionalities within a hierarchical framework. Understanding hardware does not only provide insights into its components but also spark innovation for enhancing computer infrastructure. Additionally, since software leverages the capabilities of the hardware to execute its functions, you can examine which aspects of the hardware do we have to develop for more robust programs.
+
 
 At the same time, the limitless potential of software opens avenues for a myriad of possibilities. Now that you have a foundational understanding of its functions and structure, you have the ability to pinpoint areas requiring enhancement. This knowledge becomes instrumental in optimizing the field of information science by delving into the very fabric of its infrastructure. Embracing this holistic perspective positions us to maximize the potential inherent in our understanding of both hardware and software components.
 
+
 ## Assessment
+
 
 1. Which component is considered the core element that drives the computational capabilities of a computer?
 a) Main memory
 b) Input devices
 c) Processor
 d) Solid State Drive (SSD)
-2. True/False: The Arithmetic and Logic Unit (ALU) of the CPU performs both arithmetic (e.g., addition, subtraction) and logical (e.g., AND, OR) operations.
-3. Briefly explain the symbiotic relationship between hardware and software in computing systems.
-4. Define the hierarchical system in the context of complex computing systems. How does it help in understanding the organization of a computer?
+2. Which programming paradigm focuses on mathematical functions, immutability, and avoiding changing states?
+a) Imperative programming
+b) Declarative programming
+c) Functional programming
+d) Object-Oriented Programming (OOP)
+3. True/False: Operating systems serve to expose the intricacies of hardware to end users.
+4. True/False: The Arithmetic and Logic Unit (ALU) of the CPU performs both arithmetic (e.g., addition, subtraction) and logical (e.g., AND, OR) operations.
+5. Briefly explain the symbiotic relationship between hardware and software in computing systems.
+6. Explain the role of utilities in a computer system.
+7. Define the hierarchical system in the context of complex computing systems. How does it help in understanding the organization of a computer?
+8. What are the main functions of an algorithm in programming?
+
+
+
+
 
 
 ::: {.callout-tip}
-## Critical Question
-Explain the significance of understanding the organization of a computing system. How does this understanding contribute to advancements in information science? Provide examples to support your argument.
-::: 
+## Critical Questions
+* Explain the significance of understanding the organization of a computing system. How does this understanding contribute to advancements in information science? Provide examples to support your argument.
 
-### Answers
-1. C
-2. True
-3. Hardware and software work together in a symbiotic relationship, where hardware provides the physical structure and the necessary platform for the software to execute specific tasks, such as data processing or running applications. 
-4. The hierarchical system breaks down complexity into manageable levels. It helps the understand computer system by categorizing elements from general to specific, providing a systematic approach to examine both structure and function at different levels.
+
+* Reflect on the significance of the interaction between hardware and software in a computer system. How does this interaction impact the user experience and the overall functionality of the system?
+:::
+
+
+
+
+
+
+#### Answers
+1. C. Processor.
+2. C. Functional Programming.
+3. False
+4. True
+5. Hardware and software work together in a symbiotic relationship, where hardware provides the physical structure and the necessary platform for the software to execute specific tasks, such as data processing or running applications.
+6. Utilities are software programs that perform tasks related to system management or maintenance, such as compressing files or conducting system diagnostics.
+7. The hierarchical system breaks down complexity into manageable levels. It helps the understand computer system by categorizing elements from general to specific, providing a systematic approach to examine both structure and function at different levels.
+8. Algorithms are step-by-step procedures that solve specific problems or perform mathematical functions, dictating the logic of computation and focusing on efficiency in terms of time execution and data storage.
+
+
+### Keywords
+
+
+*Information Science, Computing System, Hardware, Software, Digital Information, Computer Organization, Computer Architecture, Input/Output Devices, Operating Systems, Programming Languages, Hierarchy, Structure, Function, Data Processing, Data Storage, Control, Central Processing Unit (CPU), Main Memory, System Bus, Networking Infrastructure, Software, System Software, Application Software, Libraries, Utilities, Middleware, Development Software, Database Management Systems (DBMS), Operating System, Programming Languages, Imperative Programming, Declarative Programming, Functional Programming, Object-Oriented Programming (OOP), Algorithms, Variables, Data Types, Control Structures, Machine Language, Assembly Language*
+
+
 
 
 ### Bibliography

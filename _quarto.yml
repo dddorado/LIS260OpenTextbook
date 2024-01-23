@@ -2,6 +2,7 @@ project:
   type: book
 
 book:
+  cover-image: cover.png
   title: "Libraries in the Digital Age: A Guide to Information Systems for Librarians and Information Professionals"
   author: 
   - "Princess Anne D. Balajadia"
@@ -16,7 +17,6 @@ book:
   date: "01/19/2023"
   chapters:
     - index.qmd
-    - intro.qmd
     - chap1_historyIS.qmd
     - chap2_secureIS.qmd
     - chap3_corporate.qmd
@@ -29,7 +29,9 @@ bibliography: references.bib
 
 format:
   html:
-    theme: sandstone
+    theme: 
+      - sandstone
+      - custom.scss
   pdf:
     documentclass: scrreprt
     toc: true
