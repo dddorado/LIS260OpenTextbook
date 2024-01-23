@@ -100,7 +100,7 @@ Use of High-Quality Data  and Database Technology
 ## Hypothetical Situation:
 
 
-Consider this scenario, a retail company utilizes a DBMS to have a better operation and provide better customer experience. For example, ITC retail faces a ;lot of challenges like inventory management, tracking of customer purchase, and analysis of sales trends. ITC retail then implements a DBMS to streamline processes, imr\prove data accuracy, and gain valuable insights from consumer behavior. In order to make this possible, ITC retail deployed a relational database system to manage its inventory, sales, and customer information. Since it has a lot of branches, each store has a local database that synchronizes with a central database in real-time. With this method, consistent and updated information all throughout the stores are being provided for.
+Consider this scenario, a retail company utilizes a DBMS to have a better operation and provide better customer experience. For example, ITC retail faces a ;lot of challenges like inventory management, tracking of customer purchase, and analysis of sales trends. ITC retail then implements a DBMS to streamline processes, improve data accuracy, and gain valuable insights from consumer behavior. In order to make this possible, ITC retail deployed a relational database system to manage its inventory, sales, and customer information. Since it has a lot of branches, each store has a local database that synchronizes with a central database in real-time. With this method, consistent and updated information all throughout the stores are being provided for.
 
 
 

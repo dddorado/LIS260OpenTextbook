@@ -1,12 +1,12 @@
 /*-- scss:rules --*/
 h1, h2, h3, h4, h5, h6 {
-  text-shadow: -1px -1px 0 rgba(0, 0, 0, .3);
+  text-shadow: -1px -0.5px 0 rgba(0, 0, 0, .3);
 }
 
 
 header h1 {
-  font-size: 70px;
-  font-weight: 600;
+  font-size: 50px;
+  font-weight: 70;
   background-image: linear-gradient(to left, #553c9a, #b393d3);
   color: transparent;
   background-clip: text;
@@ -14,12 +14,12 @@ header h1 {
 }
 
 .menu-text {
-  font-size: 30px;
+  font-size: 20px;
   background-image: linear-gradient(to left, #553c9a, #b393d3);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
 }
 .sidebar-item{
-  padding-bottom: 40px;
+  padding-bottom: 10px;
 }

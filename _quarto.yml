@@ -1,8 +1,14 @@
 project:
   type: book
 
+execute:
+  echo: true
+  error: true
+
+
 book:
   cover-image: cover.png
+
   title: "Libraries in the Digital Age: A Guide to Information Systems for Librarians and Information Professionals"
   author: 
   - "Princess Anne D. Balajadia"
@@ -14,7 +20,7 @@ book:
   - "Denzel G. Sarmiento"
   - "Angela Nicole C. Yap"
 
-  date: "01/19/2023"
+  date: "01/23/2023"
   chapters:
     - index.qmd
     - chap1_historyIS.qmd
@@ -27,16 +33,36 @@ book:
 
 bibliography: references.bib
 
-format:
-  html:
-    theme: 
-      - sandstone
-      - custom.scss
-  pdf:
-    documentclass: scrreprt
-    toc: true
-    number-sections: true
-    colorlinks: true
 
+
+format:
+  # html:
+  #   toc: true
+  #   toc-depth: 3
+  #   theme: 
+  #     - sandstone
+  #     - custom.scss
+  pdf:
+    encoding: utf8
+    cover-image: "cover.png"
+    paper-size: "a4"
+    template: mytemplate.tex
+    documentclass: book
+    titlepage: true
+    titlepage-background: "page decor.png"
+    header-left: "Libraries in the Digital Age"
+    footer-left: "Balajadia, Bonzon, Calceta, Diano, Padin, Parman, Sarmiento, Yap"
+    page-background: "page decor.png"
+    toc: true
+    toc-depth: 3
+    colorlinks: true
+    header-right: "LIS 260 Class Project (1st Sem 2023-2024)"
+    include-in-header: 
+      text: |
+        \usepackage{makeidx}
+        \makeindex
+    include-after-body: 
+      text: |
+        \printindex
 editor: visual
 
