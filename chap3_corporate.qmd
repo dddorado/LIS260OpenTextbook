@@ -383,3 +383,7 @@ Obstacles may include resistance to change, lack of awareness, and organizationa
 * *In what ways can leadership contribute to a more accountable organizational culture?*
 Leadership plays a pivotal role by setting an example, communicating expectations, and creating an environment that encourages openness and learning. Leaders must prioritize ethical decision-making and hold themselves accountable.
 
+## References
+
+::: {#refs}
+:::

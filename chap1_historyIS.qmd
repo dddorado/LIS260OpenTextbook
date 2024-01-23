@@ -26,7 +26,7 @@ editor: visual
 * Analyze the significant historical events that shaped the trajectory of information systems;
 * Identify how historical legacies impact the present landscape of information systems.
  
-# Introduction
+## Introduction
  
 In today's digital age, information systems play a crucial role in our daily lives. From the moment we wake up and check our smartphones to the time we go to bed and browse through social media, we are constantly interacting with various forms of information systems. But have you ever wondered about the origins of these systems and how they have evolved over time?
  
@@ -233,6 +233,11 @@ Understanding the history of information systems allows us to appreciate the pro
 1. How have information systems transformed the way we work, learn, and communicate? What are the positive and negative consequences of these changes?
 2. What are the emerging trends and challenges in information systems? - How can we prepare for a future where technology is even more deeply embedded in our lives?
 3. What are the long-term social and cultural implications of our increasingly data-driven world? What are the risks of surveillance, manipulation, and loss of agency?
+
+## References
+
+::: {#refs}
+:::
 
 ## Keywords
 computing, data, computers, internet, information systems, machines, communication, technology, software, web

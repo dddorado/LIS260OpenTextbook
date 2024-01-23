@@ -54,6 +54,8 @@ Now, these cloud things aren't one-size-fits-all. We've got different flavors:
 
 In a nutshell, cloud computing is all about flexing your tech muscles without the hassle. It's like having a digital playground where you can pick and choose what you need. So, whether you're into tech or just curious, cloud computing is where the future's at!
 
+[@ibm_cloud_computing]
+
 ### Big Cloud Companies:
 
 Alright, when we say big, we mean BIG. We've got the tech giants stepping up to the plate:
@@ -81,6 +83,8 @@ Alright, when we say big, we mean BIG. We've got the tech giants stepping up to 
 
 These companies are like the rockstars of the cloud world, each bringing its own vibe to the digital concert.
 
+[@jebaraj2023cloudcompanies]
+
 ### Keeping Cloud Data Safe:
 
 Okay, so you've got your digital stuff up in the cloud, but how do you make sure it's locked down tight? Here's the lowdown:
@@ -100,6 +104,8 @@ Okay, so you've got your digital stuff up in the cloud, but how do you make sure
 
 So, whether it's AWS, Azure, GCP, IBM, or Oracle, and no matter what you're storing in the cloud – from secret recipes to next-level gaming ideas – keeping it safe is the name of the game. Encrypt it, control who gets the keys, and always play by the rules. That way, your digital world stays your own personal fortress.
 
+[@microsoft2023securedata]
+
 ### Storing Data in the Cloud:
 Alright, so you've got your data in the cloud, but not all data is the same. It's like sorting your room – different things, different places:
 
@@ -118,20 +124,22 @@ Alright, so you've got your data in the cloud, but not all data is the same. It'
 
 Plus, we've got Content Delivery Networks (CDN) in the mix. They're like the express delivery service of the digital world, making sure your data gets to you lightning-fast.
 
+[@google_cloud_storage]
+
 ### Connecting in the Cloud:
 
 Now, let's talk about making connections in this vast digital landscape:
 
 
-* **Virtual Private Cloud (VPC):**
+* **Virtual Private Cloud (VPC) [@cloudflare_vpc]:**
 
     + It's like having your private corner in the digital playground. VPC lets you create your own network, keeping your stuff away from the digital nosy neighbors.
 
-* **Load Balancing:**
+* **Load Balancing [@aws_load_balancing]:**
 
     + Imagine you're juggling a bunch of balls; you want to make sure none drop, right? Load balancing is like the expert juggler, evenly distributing the workload among different servers. It keeps everything running smoothly.
 
-* **Content Delivery Networks (CDN):**
+* **Content Delivery Networks (CDN) [@aws_cdn]:**
 
     + CDNs not only deliver data quickly but also help speed up the delivery of content, like images and videos. It's like getting your favorite snacks delivered to your doorstep ASAP.
 
@@ -154,6 +162,8 @@ Now, let's check out what's cooking in the cloud kitchen:
 
 So, from organizing your digital treasures to creating your private digital space and riding the waves of cutting-edge tech, the cloud is more than just a storage locker – it's a digital playground full of endless possibilities.
 
+[@marr2023cloudtrends]
+
 ## Internet of Things (IoT):
 
 By the end of this section, you should be able to:
@@ -168,7 +178,7 @@ By the end of this section, you should be able to:
 
 * Explore the implications of 5G networks, the integration of AI and machine learning in IoT, and the concept of edge computing. Assess how these trends may shape the future landscape of IoT and its applications.
 
-### What is IoT?
+### What is IoT? [@ibm_iot]
 
 So, imagine your fridge, your watch, even your toaster, all chatting away on the internet. That's IoT – connecting everyday things to the digital dance floor. Here are the main players:
 
@@ -188,7 +198,7 @@ So, imagine your fridge, your watch, even your toaster, all chatting away on the
 
     + And of course, you need a way to interact with all this cool tech. The user interface is like the control panel, making it easy for you to boss around your smart devices.
 
-### How IoT Works:
+### How IoT Works [@velazquez2022iot]:
 Alright, now let's peek behind the curtain and see how the IoT magic happens:
 
 
@@ -208,7 +218,7 @@ Alright, now let's peek behind the curtain and see how the IoT magic happens:
 
     + Finally, the applications are like the digital maestros, orchestrating how your smart devices behave and what they do.
 
-### Talking in IoT:
+### Talking in IoT [@gillis2023iot]:
 
 Now, let's chat about how these smart devices communicate – it's like they've got their own language:
 
@@ -221,7 +231,7 @@ Now, let's chat about how these smart devices communicate – it's like they've 
 
     + And these are like special dialects for specific devices – making sure your smart thermostat understands your smart doorbell without any confusion.
 
-### Keeping IoT Safe:
+### Keeping IoT Safe [@muts2024iot]:
 
 We've got all this tech talk going on, but we need to keep it secure:
 
@@ -236,7 +246,7 @@ We've got all this tech talk going on, but we need to keep it secure:
 
 So, from your toaster to your smartwatch, IoT is like giving everyday things a digital upgrade and connecting them in a tech-savvy symphony.
 
-### Platforms for IoT:
+### Platforms for IoT [@muts2024iot]:
 
 So, you've got all these cool IoT ideas, but how do you bring them to life? Well, these platforms are like the playgrounds where IoT dreams become reality:
 
@@ -261,7 +271,7 @@ So, you've got all these cool IoT ideas, but how do you bring them to life? Well
 
     + serves as a tool for managing big data. It allows full control and multiple manipulations with data that businesses run daily. The main effort is focused on the collection, sorting, analyzing of information and turning it into a valuable asset
 
-### Real Uses of IoT:
+### Real Uses of IoT [@ivey2023iotapplications]:
 
 Now that we've got the tools, let's see where people are putting IoT to work in the real world:
 
@@ -286,7 +296,7 @@ Now that we've got the tools, let's see where people are putting IoT to work in 
 
     + Farms aren't left out! IoT helps farmers monitor crops, control irrigation, and even track the health of their livestock.
 
-### Challenges with IoT:
+### Challenges with IoT [@geeks_for_geeks_iot_challenges]:
 
 Of course, with great tech comes great challenges:
 
@@ -303,7 +313,7 @@ Of course, with great tech comes great challenges:
 
     + With all these smart devices churning out data, you need big brains (and servers) to handle the load.
 
-### What's Next for IoT?:
+### What's Next for IoT? [@sugandhi2023iotfuture]:
 
 Hold onto your tech hats; the future's looking even more exciting:
 
@@ -360,6 +370,11 @@ Delving into the communication protocols of IoT devices, what significance do la
 
 * If you were to make something become a smart device, what would it be? What functions will it do? How can society benefit from that innovation?
 
+## References
+
+::: {#refs}
+:::
+
 ## Keywords 
 
 ### Cloud Computing: 
@@ -369,3 +384,4 @@ Delving into the communication protocols of IoT devices, what significance do la
 ### Internet of Things (IoT):
 
 * IoT, Connectivity, Things, Data Processing, User Interface, Devices, Connectivity, Cloud, Applications, MQTT, CoAP, HTTP/HTTPS, AMQP, LoRaWAN, Zigbee, Secure Devices, Networks, Data, Privacy, AWS IoT, Azure IoT, Google Cloud IoT, IBM Watson IoT, Smart Cities, Industrial IoT (IIoT), Healthcare IoT, Smart Homes, Agriculture IoT, Security and Privacy Issues, Interoperability, Handling Data, 5G Networks, AI, Machine Learning, Edge Computing
+

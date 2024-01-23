@@ -3,7 +3,16 @@ project:
 
 book:
   title: "Libraries in the Digital Age: A Guide to Information Systems for Librarians and Information Professionals"
-  author: "LIS 260"
+  author: 
+  - "Princess Anne D. Balajadia"
+  - "Jan Harvey B. Bonzon"
+  - "Anne Frances B. Calceta"
+  - "Jericho C. Diano"
+  - "Frances Riscel S. Padin"
+  - "Reyna M. Parman"
+  - "Denzel G. Sarmiento"
+  - "Angela Nicole C. Yap"
+
   date: "01/19/2023"
   chapters:
     - index.qmd
@@ -14,7 +23,6 @@ book:
     - chap4_hardwaresoftware.qmd
     - chap5_database.qmd
     - chap8_cloudIoT.qmd
-    - summary.qmd
     - references.qmd
 
 bibliography: references.bib

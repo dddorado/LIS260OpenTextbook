@@ -94,3 +94,8 @@ Database systems allow the capturing of data for it to be modified, stored, upda
 ## Critical Thinking Questions:
 1. What are the primary considerations for a firm/ organization should a database be utilized? 
 2. What could be the repercussions of moving to a database as a service environment?
+
+## References
+
+::: {#refs}
+:::

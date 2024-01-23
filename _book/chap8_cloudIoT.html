@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -155,12 +175,9 @@ ul.task-list li input[type="checkbox"] {
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text">summary.qmd</span>
-  </li>
-        <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./references.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">References</span></span></a>
+ <span class="menu-text">References</span></a>
   </div>
 </li>
     </ul>
@@ -185,14 +202,14 @@ ul.task-list li input[type="checkbox"] {
   </ul></li>
   <li><a href="#internet-of-things-iot" id="toc-internet-of-things-iot" class="nav-link" data-scroll-target="#internet-of-things-iot"><span class="header-section-number">7.2</span> Internet of Things (IoT):</a>
   <ul class="collapse">
-  <li><a href="#what-is-iot" id="toc-what-is-iot" class="nav-link" data-scroll-target="#what-is-iot"><span class="header-section-number">7.2.1</span> What is IoT?</a></li>
-  <li><a href="#how-iot-works" id="toc-how-iot-works" class="nav-link" data-scroll-target="#how-iot-works"><span class="header-section-number">7.2.2</span> How IoT Works:</a></li>
-  <li><a href="#talking-in-iot" id="toc-talking-in-iot" class="nav-link" data-scroll-target="#talking-in-iot"><span class="header-section-number">7.2.3</span> Talking in IoT:</a></li>
-  <li><a href="#keeping-iot-safe" id="toc-keeping-iot-safe" class="nav-link" data-scroll-target="#keeping-iot-safe"><span class="header-section-number">7.2.4</span> Keeping IoT Safe:</a></li>
-  <li><a href="#platforms-for-iot" id="toc-platforms-for-iot" class="nav-link" data-scroll-target="#platforms-for-iot"><span class="header-section-number">7.2.5</span> Platforms for IoT:</a></li>
-  <li><a href="#real-uses-of-iot" id="toc-real-uses-of-iot" class="nav-link" data-scroll-target="#real-uses-of-iot"><span class="header-section-number">7.2.6</span> Real Uses of IoT:</a></li>
-  <li><a href="#challenges-with-iot" id="toc-challenges-with-iot" class="nav-link" data-scroll-target="#challenges-with-iot"><span class="header-section-number">7.2.7</span> Challenges with IoT:</a></li>
-  <li><a href="#whats-next-for-iot" id="toc-whats-next-for-iot" class="nav-link" data-scroll-target="#whats-next-for-iot"><span class="header-section-number">7.2.8</span> What’s Next for IoT?:</a></li>
+  <li><a href="#what-is-iot-ibm_iot" id="toc-what-is-iot-ibm_iot" class="nav-link" data-scroll-target="#what-is-iot-ibm_iot"><span class="header-section-number">7.2.1</span> What is IoT? <span class="citation" data-cites="ibm_iot">(IBM n.d.)</span></a></li>
+  <li><a href="#how-iot-works-velazquez2022iot" id="toc-how-iot-works-velazquez2022iot" class="nav-link" data-scroll-target="#how-iot-works-velazquez2022iot"><span class="header-section-number">7.2.2</span> How IoT Works <span class="citation" data-cites="velazquez2022iot">(Velazquez 2022)</span>:</a></li>
+  <li><a href="#talking-in-iot-gillis2023iot" id="toc-talking-in-iot-gillis2023iot" class="nav-link" data-scroll-target="#talking-in-iot-gillis2023iot"><span class="header-section-number">7.2.3</span> Talking in IoT <span class="citation" data-cites="gillis2023iot">(Gillis 2023)</span>:</a></li>
+  <li><a href="#keeping-iot-safe-muts2024iot" id="toc-keeping-iot-safe-muts2024iot" class="nav-link" data-scroll-target="#keeping-iot-safe-muts2024iot"><span class="header-section-number">7.2.4</span> Keeping IoT Safe <span class="citation" data-cites="muts2024iot">(Muts 2024)</span>:</a></li>
+  <li><a href="#platforms-for-iot-muts2024iot" id="toc-platforms-for-iot-muts2024iot" class="nav-link" data-scroll-target="#platforms-for-iot-muts2024iot"><span class="header-section-number">7.2.5</span> Platforms for IoT <span class="citation" data-cites="muts2024iot">(Muts 2024)</span>:</a></li>
+  <li><a href="#real-uses-of-iot-ivey2023iotapplications" id="toc-real-uses-of-iot-ivey2023iotapplications" class="nav-link" data-scroll-target="#real-uses-of-iot-ivey2023iotapplications"><span class="header-section-number">7.2.6</span> Real Uses of IoT <span class="citation" data-cites="ivey2023iotapplications">(Ivey 2023)</span>:</a></li>
+  <li><a href="#challenges-with-iot-geeks_for_geeks_iot_challenges" id="toc-challenges-with-iot-geeks_for_geeks_iot_challenges" class="nav-link" data-scroll-target="#challenges-with-iot-geeks_for_geeks_iot_challenges"><span class="header-section-number">7.2.7</span> Challenges with IoT <span class="citation" data-cites="geeks_for_geeks_iot_challenges">(Geeks 2023)</span>:</a></li>
+  <li><a href="#whats-next-for-iot-sugandhi2023iotfuture" id="toc-whats-next-for-iot-sugandhi2023iotfuture" class="nav-link" data-scroll-target="#whats-next-for-iot-sugandhi2023iotfuture"><span class="header-section-number">7.2.8</span> What’s Next for IoT? <span class="citation" data-cites="sugandhi2023iotfuture">(Sugandhi 2023)</span>:</a></li>
   </ul></li>
   <li><a href="#critical-questions" id="toc-critical-questions" class="nav-link" data-scroll-target="#critical-questions"><span class="header-section-number">7.3</span> Critical Questions</a>
   <ul class="collapse">
@@ -204,10 +221,11 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#cloud-computing-2" id="toc-cloud-computing-2" class="nav-link" data-scroll-target="#cloud-computing-2"><span class="header-section-number">7.4.1</span> Cloud Computing:</a></li>
   <li><a href="#internet-of-things-iot-1" id="toc-internet-of-things-iot-1" class="nav-link" data-scroll-target="#internet-of-things-iot-1"><span class="header-section-number">7.4.2</span> Internet of Things (IoT):</a></li>
   </ul></li>
-  <li><a href="#keywords" id="toc-keywords" class="nav-link" data-scroll-target="#keywords"><span class="header-section-number">7.5</span> Keywords</a>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">7.5</span> References</a></li>
+  <li><a href="#keywords" id="toc-keywords" class="nav-link" data-scroll-target="#keywords"><span class="header-section-number">7.6</span> Keywords</a>
   <ul class="collapse">
-  <li><a href="#cloud-computing-3" id="toc-cloud-computing-3" class="nav-link" data-scroll-target="#cloud-computing-3"><span class="header-section-number">7.5.1</span> Cloud Computing:</a></li>
-  <li><a href="#internet-of-things-iot-2" id="toc-internet-of-things-iot-2" class="nav-link" data-scroll-target="#internet-of-things-iot-2"><span class="header-section-number">7.5.2</span> Internet of Things (IoT):</a></li>
+  <li><a href="#cloud-computing-3" id="toc-cloud-computing-3" class="nav-link" data-scroll-target="#cloud-computing-3"><span class="header-section-number">7.6.1</span> Cloud Computing:</a></li>
+  <li><a href="#internet-of-things-iot-2" id="toc-internet-of-things-iot-2" class="nav-link" data-scroll-target="#internet-of-things-iot-2"><span class="header-section-number">7.6.2</span> Internet of Things (IoT):</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -284,6 +302,7 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 <p>In a nutshell, cloud computing is all about flexing your tech muscles without the hassle. It’s like having a digital playground where you can pick and choose what you need. So, whether you’re into tech or just curious, cloud computing is where the future’s at!</p>
+<p><span class="citation" data-cites="ibm_cloud_computing">(<a href="#ref-ibm_cloud_computing" role="doc-biblioref">IBM n.d.</a>)</span></p>
 </section>
 <section id="big-cloud-companies" class="level3" data-number="7.1.3">
 <h3 data-number="7.1.3" class="anchored" data-anchor-id="big-cloud-companies"><span class="header-section-number">7.1.3</span> Big Cloud Companies:</h3>
@@ -311,6 +330,7 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 <p>These companies are like the rockstars of the cloud world, each bringing its own vibe to the digital concert.</p>
+<p><span class="citation" data-cites="jebaraj2023cloudcompanies">(<a href="#ref-jebaraj2023cloudcompanies" role="doc-biblioref">Jebaraj 2023</a>)</span></p>
 </section>
 <section id="keeping-cloud-data-safe" class="level3" data-number="7.1.4">
 <h3 data-number="7.1.4" class="anchored" data-anchor-id="keeping-cloud-data-safe"><span class="header-section-number">7.1.4</span> Keeping Cloud Data Safe:</h3>
@@ -330,6 +350,7 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 <p>So, whether it’s AWS, Azure, GCP, IBM, or Oracle, and no matter what you’re storing in the cloud – from secret recipes to next-level gaming ideas – keeping it safe is the name of the game. Encrypt it, control who gets the keys, and always play by the rules. That way, your digital world stays your own personal fortress.</p>
+<p><span class="citation" data-cites="microsoft2023securedata">(<a href="#ref-microsoft2023securedata" role="doc-biblioref">Microsoft 2023</a>)</span></p>
 </section>
 <section id="storing-data-in-the-cloud" class="level3" data-number="7.1.5">
 <h3 data-number="7.1.5" class="anchored" data-anchor-id="storing-data-in-the-cloud"><span class="header-section-number">7.1.5</span> Storing Data in the Cloud:</h3>
@@ -349,20 +370,21 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 <p>Plus, we’ve got Content Delivery Networks (CDN) in the mix. They’re like the express delivery service of the digital world, making sure your data gets to you lightning-fast.</p>
+<p><span class="citation" data-cites="google_cloud_storage">(<a href="#ref-google_cloud_storage" role="doc-biblioref">Google n.d.</a>)</span></p>
 </section>
 <section id="connecting-in-the-cloud" class="level3" data-number="7.1.6">
 <h3 data-number="7.1.6" class="anchored" data-anchor-id="connecting-in-the-cloud"><span class="header-section-number">7.1.6</span> Connecting in the Cloud:</h3>
 <p>Now, let’s talk about making connections in this vast digital landscape:</p>
 <ul>
-<li><p><strong>Virtual Private Cloud (VPC):</strong></p>
+<li><p><strong>Virtual Private Cloud (VPC) <span class="citation" data-cites="cloudflare_vpc">(<a href="#ref-cloudflare_vpc" role="doc-biblioref">Cloudfare n.d.</a>)</span>:</strong></p>
 <ul>
 <li>It’s like having your private corner in the digital playground. VPC lets you create your own network, keeping your stuff away from the digital nosy neighbors.</li>
 </ul></li>
-<li><p><strong>Load Balancing:</strong></p>
+<li><p><strong>Load Balancing <span class="citation" data-cites="aws_load_balancing">(<a href="#ref-aws_load_balancing" role="doc-biblioref">Amazon Web Services n.d.</a>)</span>:</strong></p>
 <ul>
 <li>Imagine you’re juggling a bunch of balls; you want to make sure none drop, right? Load balancing is like the expert juggler, evenly distributing the workload among different servers. It keeps everything running smoothly.</li>
 </ul></li>
-<li><p><strong>Content Delivery Networks (CDN):</strong></p>
+<li><p><strong>Content Delivery Networks (CDN) <span class="citation" data-cites="aws_cdn">(<a href="#ref-aws_cdn" role="doc-biblioref">Amazon Web Services n.d.</a>)</span>:</strong></p>
 <ul>
 <li>CDNs not only deliver data quickly but also help speed up the delivery of content, like images and videos. It’s like getting your favorite snacks delivered to your doorstep ASAP.</li>
 </ul></li>
@@ -386,6 +408,7 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 <p>So, from organizing your digital treasures to creating your private digital space and riding the waves of cutting-edge tech, the cloud is more than just a storage locker – it’s a digital playground full of endless possibilities.</p>
+<p><span class="citation" data-cites="marr2023cloudtrends">(<a href="#ref-marr2023cloudtrends" role="doc-biblioref">Marr 2023</a>)</span></p>
 </section>
 </section>
 <section id="internet-of-things-iot" class="level2" data-number="7.2">
@@ -398,8 +421,8 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Investigate and present a case study on a specific industry or sector leveraging IoT technology. Highlight the practical uses, benefits, and potential challenges faced in implementing IoT solutions within that context.</p></li>
 <li><p>Explore the implications of 5G networks, the integration of AI and machine learning in IoT, and the concept of edge computing. Assess how these trends may shape the future landscape of IoT and its applications.</p></li>
 </ul>
-<section id="what-is-iot" class="level3" data-number="7.2.1">
-<h3 data-number="7.2.1" class="anchored" data-anchor-id="what-is-iot"><span class="header-section-number">7.2.1</span> What is IoT?</h3>
+<section id="what-is-iot-ibm_iot" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="what-is-iot-ibm_iot"><span class="header-section-number">7.2.1</span> What is IoT? <span class="citation" data-cites="ibm_iot">(<a href="#ref-ibm_iot" role="doc-biblioref">IBM n.d.</a>)</span></h3>
 <p>So, imagine your fridge, your watch, even your toaster, all chatting away on the internet. That’s IoT – connecting everyday things to the digital dance floor. Here are the main players:</p>
 <ul>
 <li><p><strong>Things:</strong></p>
@@ -420,8 +443,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="how-iot-works" class="level3" data-number="7.2.2">
-<h3 data-number="7.2.2" class="anchored" data-anchor-id="how-iot-works"><span class="header-section-number">7.2.2</span> How IoT Works:</h3>
+<section id="how-iot-works-velazquez2022iot" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="how-iot-works-velazquez2022iot"><span class="header-section-number">7.2.2</span> How IoT Works <span class="citation" data-cites="velazquez2022iot">(<a href="#ref-velazquez2022iot" role="doc-biblioref">Velazquez 2022</a>)</span>:</h3>
 <p>Alright, now let’s peek behind the curtain and see how the IoT magic happens:</p>
 <ul>
 <li><p><strong>Devices:</strong></p>
@@ -442,8 +465,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="talking-in-iot" class="level3" data-number="7.2.3">
-<h3 data-number="7.2.3" class="anchored" data-anchor-id="talking-in-iot"><span class="header-section-number">7.2.3</span> Talking in IoT:</h3>
+<section id="talking-in-iot-gillis2023iot" class="level3" data-number="7.2.3">
+<h3 data-number="7.2.3" class="anchored" data-anchor-id="talking-in-iot-gillis2023iot"><span class="header-section-number">7.2.3</span> Talking in IoT <span class="citation" data-cites="gillis2023iot">(<a href="#ref-gillis2023iot" role="doc-biblioref">Gillis 2023</a>)</span>:</h3>
 <p>Now, let’s chat about how these smart devices communicate – it’s like they’ve got their own language:</p>
 <ul>
 <li><p><strong>MQTT, CoAP, HTTP/HTTPS, AMQP:</strong></p>
@@ -456,8 +479,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="keeping-iot-safe" class="level3" data-number="7.2.4">
-<h3 data-number="7.2.4" class="anchored" data-anchor-id="keeping-iot-safe"><span class="header-section-number">7.2.4</span> Keeping IoT Safe:</h3>
+<section id="keeping-iot-safe-muts2024iot" class="level3" data-number="7.2.4">
+<h3 data-number="7.2.4" class="anchored" data-anchor-id="keeping-iot-safe-muts2024iot"><span class="header-section-number">7.2.4</span> Keeping IoT Safe <span class="citation" data-cites="muts2024iot">(<a href="#ref-muts2024iot" role="doc-biblioref">Muts 2024</a>)</span>:</h3>
 <p>We’ve got all this tech talk going on, but we need to keep it secure:</p>
 <ul>
 <li><p><strong>Secure Devices, Networks, and Data:</strong></p>
@@ -471,8 +494,8 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 <p>So, from your toaster to your smartwatch, IoT is like giving everyday things a digital upgrade and connecting them in a tech-savvy symphony.</p>
 </section>
-<section id="platforms-for-iot" class="level3" data-number="7.2.5">
-<h3 data-number="7.2.5" class="anchored" data-anchor-id="platforms-for-iot"><span class="header-section-number">7.2.5</span> Platforms for IoT:</h3>
+<section id="platforms-for-iot-muts2024iot" class="level3" data-number="7.2.5">
+<h3 data-number="7.2.5" class="anchored" data-anchor-id="platforms-for-iot-muts2024iot"><span class="header-section-number">7.2.5</span> Platforms for IoT <span class="citation" data-cites="muts2024iot">(<a href="#ref-muts2024iot" role="doc-biblioref">Muts 2024</a>)</span>:</h3>
 <p>So, you’ve got all these cool IoT ideas, but how do you bring them to life? Well, these platforms are like the playgrounds where IoT dreams become reality:</p>
 <ul>
 <li><p><strong>AWS IoT:</strong></p>
@@ -497,8 +520,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="real-uses-of-iot" class="level3" data-number="7.2.6">
-<h3 data-number="7.2.6" class="anchored" data-anchor-id="real-uses-of-iot"><span class="header-section-number">7.2.6</span> Real Uses of IoT:</h3>
+<section id="real-uses-of-iot-ivey2023iotapplications" class="level3" data-number="7.2.6">
+<h3 data-number="7.2.6" class="anchored" data-anchor-id="real-uses-of-iot-ivey2023iotapplications"><span class="header-section-number">7.2.6</span> Real Uses of IoT <span class="citation" data-cites="ivey2023iotapplications">(<a href="#ref-ivey2023iotapplications" role="doc-biblioref">Ivey 2023</a>)</span>:</h3>
 <p>Now that we’ve got the tools, let’s see where people are putting IoT to work in the real world:</p>
 <ul>
 <li><p><strong>Smart Cities:</strong></p>
@@ -523,8 +546,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="challenges-with-iot" class="level3" data-number="7.2.7">
-<h3 data-number="7.2.7" class="anchored" data-anchor-id="challenges-with-iot"><span class="header-section-number">7.2.7</span> Challenges with IoT:</h3>
+<section id="challenges-with-iot-geeks_for_geeks_iot_challenges" class="level3" data-number="7.2.7">
+<h3 data-number="7.2.7" class="anchored" data-anchor-id="challenges-with-iot-geeks_for_geeks_iot_challenges"><span class="header-section-number">7.2.7</span> Challenges with IoT <span class="citation" data-cites="geeks_for_geeks_iot_challenges">(<a href="#ref-geeks_for_geeks_iot_challenges" role="doc-biblioref">Geeks 2023</a>)</span>:</h3>
 <p>Of course, with great tech comes great challenges:</p>
 <ul>
 <li><p><strong>Security and Privacy Issues:</strong></p>
@@ -541,8 +564,8 @@ ul.task-list li input[type="checkbox"] {
 </ul></li>
 </ul>
 </section>
-<section id="whats-next-for-iot" class="level3" data-number="7.2.8">
-<h3 data-number="7.2.8" class="anchored" data-anchor-id="whats-next-for-iot"><span class="header-section-number">7.2.8</span> What’s Next for IoT?:</h3>
+<section id="whats-next-for-iot-sugandhi2023iotfuture" class="level3" data-number="7.2.8">
+<h3 data-number="7.2.8" class="anchored" data-anchor-id="whats-next-for-iot-sugandhi2023iotfuture"><span class="header-section-number">7.2.8</span> What’s Next for IoT? <span class="citation" data-cites="sugandhi2023iotfuture">(<a href="#ref-sugandhi2023iotfuture" role="doc-biblioref">Sugandhi 2023</a>)</span>:</h3>
 <p>Hold onto your tech hats; the future’s looking even more exciting:</p>
 <ul>
 <li><p><strong>5G Networks for Faster Connections:</strong></p>
@@ -604,16 +627,66 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
-<section id="keywords" class="level2" data-number="7.5">
-<h2 data-number="7.5" class="anchored" data-anchor-id="keywords"><span class="header-section-number">7.5</span> Keywords</h2>
-<section id="cloud-computing-3" class="level3" data-number="7.5.1">
-<h3 data-number="7.5.1" class="anchored" data-anchor-id="cloud-computing-3"><span class="header-section-number">7.5.1</span> Cloud Computing:</h3>
+<section id="references" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="references"><span class="header-section-number">7.5</span> References</h2>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="ref-aws_cdn" class="csl-entry" role="listitem">
+Amazon Web Services. n.d. <span>“What Is a CDN (Content Delivery Network)?”</span> n.d. <a href="https://aws.amazon.com/what-is/cdn/">https://aws.amazon.com/what-is/cdn/</a>.
+</div>
+<div id="ref-aws_load_balancing" class="csl-entry" role="listitem">
+———. n.d. <span>“What Is Load Balancing?”</span> n.d. <a href="https://aws.amazon.com/what-is/load-balancing/">https://aws.amazon.com/what-is/load-balancing/</a>.
+</div>
+<div id="ref-cloudflare_vpc" class="csl-entry" role="listitem">
+Cloudfare. n.d. <span>“What Is a Virtual Private Cloud (VPC)?”</span> n.d. <a href="https://www.cloudflare.com/learning/cloud/what-is-a-virtual-private-cloud/">https://www.cloudflare.com/learning/cloud/what-is-a-virtual-private-cloud/</a>.
+</div>
+<div id="ref-geeks_for_geeks_iot_challenges" class="csl-entry" role="listitem">
+Geeks, Geeks for. 2023. <span>“Challenges in Internet of Things (IoT).”</span> 2023. <a href="https://www.geeksforgeeks.org/challenges-in-internet-of-things-iot/">https://www.geeksforgeeks.org/challenges-in-internet-of-things-iot/</a>.
+</div>
+<div id="ref-gillis2023iot" class="csl-entry" role="listitem">
+Gillis, A. S. 2023. <span>“Internet of Things (IoT).”</span> 2023. <a href="https://www.techtarget.com/iotagenda/definition/Internet-of-Things-IoT">https://www.techtarget.com/iotagenda/definition/Internet-of-Things-IoT</a>.
+</div>
+<div id="ref-google_cloud_storage" class="csl-entry" role="listitem">
+Google. n.d. <span>“What Is Cloud Storage?”</span> n.d. <a href="https://cloud.google.com/learn/what-is-cloud-storage">https://cloud.google.com/learn/what-is-cloud-storage</a>.
+</div>
+<div id="ref-ibm_cloud_computing" class="csl-entry" role="listitem">
+IBM. n.d. <span>“What Is Cloud Computing?”</span> n.d. <a href="https://www.ibm.com/topics/cloud-computing">https://www.ibm.com/topics/cloud-computing</a>.
+</div>
+<div id="ref-ibm_iot" class="csl-entry" role="listitem">
+———. n.d. <span>“What Is the Internet of Things (IoT)?”</span> n.d. <a href="https://www.ibm.com/topics/internet-of-things">https://www.ibm.com/topics/internet-of-things</a>.
+</div>
+<div id="ref-ivey2023iotapplications" class="csl-entry" role="listitem">
+Ivey, A. 2023. <span>“7 Real-World IoT Applications and Examples.”</span> 2023. <a href="https://cointelegraph.com/news/7-iot-applications-and-examples">https://cointelegraph.com/news/7-iot-applications-and-examples</a>.
+</div>
+<div id="ref-jebaraj2023cloudcompanies" class="csl-entry" role="listitem">
+Jebaraj, K. 2023. <span>“Top 10 Cloud Computing Companies of 2024.”</span> 2023. <a href="https://www.knowledgehut.com/blog/cloud-computing/top-cloud-computing-companies">https://www.knowledgehut.com/blog/cloud-computing/top-cloud-computing-companies</a>.
+</div>
+<div id="ref-marr2023cloudtrends" class="csl-entry" role="listitem">
+Marr, B. 2023. <span>“The 10 Biggest Cloud Computing Trends in 2024 Everyone Must Be Ready for Now.”</span> 2023. <a href="https://www.forbes.com/sites/bernardmarr/2023/10/09/the-10-biggest-cloud-computing-trends-in-2024-everyone-must-be-ready-for-now/?sh=ea1da466d672">https://www.forbes.com/sites/bernardmarr/2023/10/09/the-10-biggest-cloud-computing-trends-in-2024-everyone-must-be-ready-for-now/?sh=ea1da466d672</a>.
+</div>
+<div id="ref-microsoft2023securedata" class="csl-entry" role="listitem">
+Microsoft. 2023. <span>“11 Best Practices for Securing Data in Cloud Services.”</span> 2023. <a href="https://www.microsoft.com/en-us/security/blog/2023/07/05/11-best-practices-for-securing-data-in-cloud-services/">https://www.microsoft.com/en-us/security/blog/2023/07/05/11-best-practices-for-securing-data-in-cloud-services/</a>.
+</div>
+<div id="ref-muts2024iot" class="csl-entry" role="listitem">
+Muts, I. 2024. <span>“10+ Best IoT Cloud Platforms in 2024.”</span> 2024. <a href="https://euristiq.com/best-iot-cloud-platforms/">https://euristiq.com/best-iot-cloud-platforms/</a>.
+</div>
+<div id="ref-sugandhi2023iotfuture" class="csl-entry" role="listitem">
+Sugandhi, A. 2023. <span>“The Future of IoT: Trends and Predictions for 2024.”</span> 2023. <a href="https://www.knowledgehut.com/blog/web-development/iot-future">https://www.knowledgehut.com/blog/web-development/iot-future</a>.
+</div>
+<div id="ref-velazquez2022iot" class="csl-entry" role="listitem">
+Velazquez, R. 2022. <span>“IoT: The Internet of Things. What Is the Internet of Things? How Does IoT Work?”</span> 2022. <a href="https://builtin.com/internet-things">https://builtin.com/internet-things</a>.
+</div>
+</div>
+</section>
+<section id="keywords" class="level2" data-number="7.6">
+<h2 data-number="7.6" class="anchored" data-anchor-id="keywords"><span class="header-section-number">7.6</span> Keywords</h2>
+<section id="cloud-computing-3" class="level3" data-number="7.6.1">
+<h3 data-number="7.6.1" class="anchored" data-anchor-id="cloud-computing-3"><span class="header-section-number">7.6.1</span> Cloud Computing:</h3>
 <ul>
 <li>Cloud Computing, Virtual Machines, Infrastructure as a Service (IaaS), Platform as a Service (PaaS), Software as a Service (SaaS), Public Cloud, Private Cloud, Hybrid Cloud, Community Cloud, Encryption, Identity and Access Management (IAM), Best Practices for Security, Amazon (AWS), Microsoft (Azure), Google (GCP), IBM, Oracle, Encrypting Data, Identity and Access Management (IAM), Security, Best Practices for Security, Objects, Blocks, Files, Content Delivery Networks (CDN), Virtual Private Cloud (VPC), Load Balancing, Content Delivery Networks (CDN), Edge Computing, Using Multiple Cloud Services Together, Quantum Computing</li>
 </ul>
 </section>
-<section id="internet-of-things-iot-2" class="level3" data-number="7.5.2">
-<h3 data-number="7.5.2" class="anchored" data-anchor-id="internet-of-things-iot-2"><span class="header-section-number">7.5.2</span> Internet of Things (IoT):</h3>
+<section id="internet-of-things-iot-2" class="level3" data-number="7.6.2">
+<h3 data-number="7.6.2" class="anchored" data-anchor-id="internet-of-things-iot-2"><span class="header-section-number">7.6.2</span> Internet of Things (IoT):</h3>
 <ul>
 <li>IoT, Connectivity, Things, Data Processing, User Interface, Devices, Connectivity, Cloud, Applications, MQTT, CoAP, HTTP/HTTPS, AMQP, LoRaWAN, Zigbee, Secure Devices, Networks, Data, Privacy, AWS IoT, Azure IoT, Google Cloud IoT, IBM Watson IoT, Smart Cities, Industrial IoT (IIoT), Healthcare IoT, Smart Homes, Agriculture IoT, Security and Privacy Issues, Interoperability, Handling Data, 5G Networks, AI, Machine Learning, Edge Computing</li>
 </ul>
@@ -1017,8 +1090,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./references.html" class="pagination-link" aria-label="<span class='chapter-number'>9</span>&nbsp; <span class='chapter-title'>References</span>">
-        <span class="nav-page-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">References</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./references.html" class="pagination-link" aria-label="References">
+        <span class="nav-page-text">References</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
