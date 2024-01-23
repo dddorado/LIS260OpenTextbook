@@ -15,7 +15,6 @@ crossref:
 toc: false
 editor: visual
 ---
-# History of Information Systems
 
 ## Learning objectives
  
@@ -63,7 +62,7 @@ Education has also greatly benefited from information systems. With digital lear
  
 In the field of healthcare, information systems enable seamless communication between healthcare providers, improving patient care coordination and reducing medical errors. Electronic health records (EHR) systems, telehealth platforms and other diagnostic tools have transformed how patient data is stored and accessed, allowing for better decision-making and personalized treatment plans, as well as better communication between healthcare professionals and patients. Data analysis tools and simulations also helped accelerate medical research and development, leading to quicker advancements in treatments and disease prevention.
  
-In *government sectors, information systems play a pivotal role in enhancing public service. From citizen registration to tax collection, online e-government platforms and public information systems provide convenient access to government services and operations  in order to ensure efficiency and transparency in governance processes, and in turn, improve citizen engagement and satisfaction.
+In government sectors, information systems play a pivotal role in enhancing public service. From citizen registration to tax collection, online e-government platforms and public information systems provide convenient access to government services and operations  in order to ensure efficiency and transparency in governance processes, and in turn, improve citizen engagement and satisfaction.
  
 Information systems also have a significant impact on environmental sustainability. From vigilant sensors guarding air, water, and forests to platforms uniting conservation champions, information systems are weaving a digital tapestry of environmental protection. They monitor and analyze environmental factors, optimize resource use, educate stakeholders, and connect individuals and organizations working towards a greener future, transforming our planet into a seamlessly protected and sustainably nourished sanctuary. These kinds of platforms can connect individuals and organizations working on environmental initiatives, fostering collaboration and sharing best practices.
  
