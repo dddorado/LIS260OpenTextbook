@@ -2,17 +2,18 @@ project:
   type: book
 
 book:
-  title: "Information Systems for Librarians and Information Professionals"
+  title: "Libraries in the Digital Age: A Guide to Information Systems for Librarians and Information Professionals"
   author: "LIS 260"
   date: "01/19/2023"
   chapters:
     - index.qmd
     - intro.qmd
-    - chap2.qmd
-    - chap3.qmd
-    - chap4.qmd
-    - chap5.qmd
-    - chap8.qmd
+    - chap1_historyIS.qmd
+    - chap2_secureIS.qmd
+    - chap3_corporate.qmd
+    - chap4_hardwaresoftware.qmd
+    - chap5_database.qmd
+    - chap8_cloudIoT.qmd
     - summary.qmd
     - references.qmd
 
@@ -20,9 +21,12 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: sandstone
   pdf:
     documentclass: scrreprt
+    toc: true
+    number-sections: true
+    colorlinks: true
 
 editor: visual
 

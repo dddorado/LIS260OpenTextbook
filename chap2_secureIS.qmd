@@ -1,0 +1,31 @@
+---
+title: "Secure Information Systems"
+bibliography: references.bib
+link-citations: true
+format: docx
+documentclass: book
+number-sections: false
+colorlinks: true
+fig-width: 6
+fig-align: 'center'
+csl: chicago-author-date.csl
+crossref:
+  fig-title: Figure.
+  tbl-title: Table.
+  title-delim: "."
+toc: false
+editor: visual
+---
+
+
+# Secure Information Systems
+This is the class project of LIS 260.
+
+
+## Content
+@fortinet2023datasecurity
+
+## References
+
+::: {#refs}
+:::
