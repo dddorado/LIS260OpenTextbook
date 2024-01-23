@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  title: "Information Systems for Librarians and Information Professionals"
+  title: "Libraries in the Digital Age: A Guide to Information Systems for Librarians and Information Professionals"
   author: "LIS 260"
   date: "01/19/2023"
   chapters:
@@ -21,10 +21,12 @@ bibliography: references.bib
 
 format:
   html:
-    theme: cosmo
+    theme: sandstone
   pdf:
     documentclass: scrreprt
-
+    toc: true
+    number-sections: true
+    colorlinks: true
 
 editor: visual
 
