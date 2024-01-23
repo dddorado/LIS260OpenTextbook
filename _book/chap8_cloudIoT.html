@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.4.547">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Information Systems for Librarians and Information Professionals - 7&nbsp; Cloud Computing and the Internet of Things</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./summary.html" rel="next">
+<link href="./chap5_database.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chap8_cloudIoT.html"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cloud Computing and the Internet of Things</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">Information Systems for Librarians and Information Professionals</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Preface</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chap1_historyIS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">History of Information Systems</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chap2_secureIS.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Secure Information Systems</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chap3_corporate.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Corporate and Individual Accountability: Ethical, Legal, and Social Issues</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chap4_hardwaresoftware.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Hardware and Software</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chap5_database.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Database Systems and Data Management</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chap8_cloudIoT.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cloud Computing and the Internet of Things</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./summary.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Summary</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">References</span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#cloud-computing" id="toc-cloud-computing" class="nav-link active" data-scroll-target="#cloud-computing"><span class="header-section-number">7.1</span> Cloud Computing</a>
+  <ul class="collapse">
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link" data-scroll-target="#learning-objectives"><span class="header-section-number">7.1.1</span> Learning Objectives</a></li>
+  <li><a href="#what-is-cloud-computing" id="toc-what-is-cloud-computing" class="nav-link" data-scroll-target="#what-is-cloud-computing"><span class="header-section-number">7.1.2</span> What is Cloud Computing?</a></li>
+  <li><a href="#big-cloud-companies" id="toc-big-cloud-companies" class="nav-link" data-scroll-target="#big-cloud-companies"><span class="header-section-number">7.1.3</span> Big Cloud Companies:</a></li>
+  <li><a href="#keeping-cloud-data-safe" id="toc-keeping-cloud-data-safe" class="nav-link" data-scroll-target="#keeping-cloud-data-safe"><span class="header-section-number">7.1.4</span> Keeping Cloud Data Safe:</a></li>
+  <li><a href="#storing-data-in-the-cloud" id="toc-storing-data-in-the-cloud" class="nav-link" data-scroll-target="#storing-data-in-the-cloud"><span class="header-section-number">7.1.5</span> Storing Data in the Cloud:</a></li>
+  <li><a href="#connecting-in-the-cloud" id="toc-connecting-in-the-cloud" class="nav-link" data-scroll-target="#connecting-in-the-cloud"><span class="header-section-number">7.1.6</span> Connecting in the Cloud:</a></li>
+  <li><a href="#new-trends-in-cloud-computing" id="toc-new-trends-in-cloud-computing" class="nav-link" data-scroll-target="#new-trends-in-cloud-computing"><span class="header-section-number">7.1.7</span> New Trends in Cloud Computing:</a></li>
+  </ul></li>
+  <li><a href="#internet-of-things-iot" id="toc-internet-of-things-iot" class="nav-link" data-scroll-target="#internet-of-things-iot"><span class="header-section-number">7.2</span> Internet of Things (IoT):</a>
+  <ul class="collapse">
+  <li><a href="#what-is-iot" id="toc-what-is-iot" class="nav-link" data-scroll-target="#what-is-iot"><span class="header-section-number">7.2.1</span> What is IoT?</a></li>
+  <li><a href="#how-iot-works" id="toc-how-iot-works" class="nav-link" data-scroll-target="#how-iot-works"><span class="header-section-number">7.2.2</span> How IoT Works:</a></li>
+  <li><a href="#talking-in-iot" id="toc-talking-in-iot" class="nav-link" data-scroll-target="#talking-in-iot"><span class="header-section-number">7.2.3</span> Talking in IoT:</a></li>
+  <li><a href="#keeping-iot-safe" id="toc-keeping-iot-safe" class="nav-link" data-scroll-target="#keeping-iot-safe"><span class="header-section-number">7.2.4</span> Keeping IoT Safe:</a></li>
+  <li><a href="#platforms-for-iot" id="toc-platforms-for-iot" class="nav-link" data-scroll-target="#platforms-for-iot"><span class="header-section-number">7.2.5</span> Platforms for IoT:</a></li>
+  <li><a href="#real-uses-of-iot" id="toc-real-uses-of-iot" class="nav-link" data-scroll-target="#real-uses-of-iot"><span class="header-section-number">7.2.6</span> Real Uses of IoT:</a></li>
+  <li><a href="#challenges-with-iot" id="toc-challenges-with-iot" class="nav-link" data-scroll-target="#challenges-with-iot"><span class="header-section-number">7.2.7</span> Challenges with IoT:</a></li>
+  <li><a href="#whats-next-for-iot" id="toc-whats-next-for-iot" class="nav-link" data-scroll-target="#whats-next-for-iot"><span class="header-section-number">7.2.8</span> What’s Next for IoT?:</a></li>
+  </ul></li>
+  <li><a href="#critical-questions" id="toc-critical-questions" class="nav-link" data-scroll-target="#critical-questions"><span class="header-section-number">7.3</span> Critical Questions</a>
+  <ul class="collapse">
+  <li><a href="#cloud-computing-1" id="toc-cloud-computing-1" class="nav-link" data-scroll-target="#cloud-computing-1"><span class="header-section-number">7.3.1</span> Cloud Computing</a></li>
+  <li><a href="#internet-of-things" id="toc-internet-of-things" class="nav-link" data-scroll-target="#internet-of-things"><span class="header-section-number">7.3.2</span> Internet of Things</a></li>
+  </ul></li>
+  <li><a href="#assessment-section" id="toc-assessment-section" class="nav-link" data-scroll-target="#assessment-section"><span class="header-section-number">7.4</span> Assessment Section</a>
+  <ul class="collapse">
+  <li><a href="#cloud-computing-2" id="toc-cloud-computing-2" class="nav-link" data-scroll-target="#cloud-computing-2"><span class="header-section-number">7.4.1</span> Cloud Computing:</a></li>
+  <li><a href="#internet-of-things-iot-1" id="toc-internet-of-things-iot-1" class="nav-link" data-scroll-target="#internet-of-things-iot-1"><span class="header-section-number">7.4.2</span> Internet of Things (IoT):</a></li>
+  </ul></li>
+  <li><a href="#keywords" id="toc-keywords" class="nav-link" data-scroll-target="#keywords"><span class="header-section-number">7.5</span> Keywords</a>
+  <ul class="collapse">
+  <li><a href="#cloud-computing-3" id="toc-cloud-computing-3" class="nav-link" data-scroll-target="#cloud-computing-3"><span class="header-section-number">7.5.1</span> Cloud Computing:</a></li>
+  <li><a href="#internet-of-things-iot-2" id="toc-internet-of-things-iot-2" class="nav-link" data-scroll-target="#internet-of-things-iot-2"><span class="header-section-number">7.5.2</span> Internet of Things (IoT):</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Cloud Computing and the Internet of Things</span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="cloud-computing" class="level2" data-number="7.1">
+<h2 data-number="7.1" class="anchored" data-anchor-id="cloud-computing"><span class="header-section-number">7.1</span> Cloud Computing</h2>
+<section id="learning-objectives" class="level3" data-number="7.1.1">
+<h3 data-number="7.1.1" class="anchored" data-anchor-id="learning-objectives"><span class="header-section-number">7.1.1</span> Learning Objectives</h3>
+<p>By the end of this section, you should be able to:</p>
+<ul>
+<li><p>Explain the differences between Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS). Provide examples of scenarios where each model would be beneficial.</p></li>
+<li><p>Evaluate a hypothetical business scenario and recommend whether a public, private, hybrid, or community cloud deployment would be most suitable. Justify your choice based on the specific needs of the business.</p></li>
+<li><p>Identify and describe three key practices for ensuring the security of data in the cloud. Discuss how these practices contribute to maintaining the integrity and confidentiality of digital assets.</p></li>
+</ul>
+<p>Compare and contrast the services offered by two major cloud service * providers, such as Amazon Web Services (AWS) and Microsoft Azure. Analyze factors that might influence a business’s decision to choose one over the other.</p>
+<ul>
+<li>Summarize the implications of edge computing, the use of multiple cloud services, and quantum computing in the context of cloud computing. Discuss potential benefits and challenges associated with these emerging trends.</li>
+</ul>
+</section>
+<section id="what-is-cloud-computing" class="level3" data-number="7.1.2">
+<h3 data-number="7.1.2" class="anchored" data-anchor-id="what-is-cloud-computing"><span class="header-section-number">7.1.2</span> What is Cloud Computing?</h3>
+<p>Let’s dive into the cool world of cloud computing. It’s like renting super-smart computers and storage space, but instead of having them in your room, they’re on the internet. Neat, huh?</p>
+<p>Now, there are three main types of this cloud magic:</p>
+<ul>
+<li><strong>Infrastructure as a Service (IaaS):</strong></li>
+</ul>
+<p>This one’s like getting the basic building blocks of computing – virtual machines, storage, and networking stuff. It’s for those who want control over the nitty-gritty without dealing with actual physical hardware.</p>
+<ul>
+<li><strong>Platform as a Service (PaaS):</strong></li>
+</ul>
+<p>Imagine a platform that takes care of all the hard techy stuff so you can focus on coding and making awesome apps. That’s PaaS for you – making life easier for the creative minds.</p>
+<ul>
+<li><strong>Software as a Service (SaaS):</strong></li>
+</ul>
+<p>SaaS is like having apps delivered to you over the internet. No need to install anything – just use it straight from the cloud. Think Google Docs or Netflix – all online, all the time. Now, these cloud things aren’t one-size-fits-all. We’ve got different flavors:</p>
+<ul>
+<li><p><strong>Public Cloud:</strong></p>
+<ul>
+<li>It’s like the town square of clouds – open to everyone. Third-party folks manage it, making it budget-friendly and scalable for any business.</li>
+</ul></li>
+<li><p><strong>Private Cloud:</strong></p>
+<ul>
+<li>This one’s like your VIP section – exclusive to one group. Great for those who need extra security and control over their digital space.</li>
+</ul></li>
+<li><p><strong>Hybrid Cloud:</strong></p>
+<ul>
+<li>A mix of public and private – get the best of both worlds. Scale up in the public cloud and keep your top-secret stuff private. Smart, huh?</li>
+</ul></li>
+<li><p><strong>Community Cloud:</strong></p>
+<ul>
+<li>Sharing is caring! It’s like a cloud hangout for a bunch of organizations with similar interests. Everyone pitches in, and everyone benefits.</li>
+</ul></li>
+</ul>
+<p>In a nutshell, cloud computing is all about flexing your tech muscles without the hassle. It’s like having a digital playground where you can pick and choose what you need. So, whether you’re into tech or just curious, cloud computing is where the future’s at!</p>
+</section>
+<section id="big-cloud-companies" class="level3" data-number="7.1.3">
+<h3 data-number="7.1.3" class="anchored" data-anchor-id="big-cloud-companies"><span class="header-section-number">7.1.3</span> Big Cloud Companies:</h3>
+<p>Alright, when we say big, we mean BIG. We’ve got the tech giants stepping up to the plate:</p>
+<ul>
+<li><p><strong>Amazon (AWS):</strong></p>
+<ul>
+<li>They practically invented this cloud stuff. Amazon Web Services (AWS) is like the OG cloud playground.</li>
+</ul></li>
+<li><p><strong>Microsoft (Azure):</strong></p>
+<ul>
+<li>You know Windows, right? Well, Microsoft’s Azure is their cloud service, and it’s a heavyweight in the game.</li>
+</ul></li>
+<li><p><strong>Google (GCP):</strong></p>
+<ul>
+<li>Google doesn’t just do search engines; they’ve got the Google Cloud Platform (GCP) too. Imagine your favorite Google services, but for businesses.</li>
+</ul></li>
+<li><p><strong>IBM:</strong></p>
+<ul>
+<li>Yup, the computer legends are in the cloud game too. IBM brings its tech expertise to the cloud scene.</li>
+</ul></li>
+<li><p><strong>Oracle:</strong></p>
+<ul>
+<li>Not just a database wizard – Oracle is also a big shot in cloud services. They handle some serious data power.</li>
+</ul></li>
+</ul>
+<p>These companies are like the rockstars of the cloud world, each bringing its own vibe to the digital concert.</p>
+</section>
+<section id="keeping-cloud-data-safe" class="level3" data-number="7.1.4">
+<h3 data-number="7.1.4" class="anchored" data-anchor-id="keeping-cloud-data-safe"><span class="header-section-number">7.1.4</span> Keeping Cloud Data Safe:</h3>
+<p>Okay, so you’ve got your digital stuff up in the cloud, but how do you make sure it’s locked down tight? Here’s the lowdown:</p>
+<ul>
+<li><p><strong>Encrypting Data:</strong></p>
+<ul>
+<li>Think of encryption as putting your data in a super-secret code. Only those with the secret handshake (or key) can unlock and understand it. It’s like having your own language for your digital diary.</li>
+</ul></li>
+<li><p><strong>Managing Who Can Access Data (Identity and Access Management):</strong></p>
+<ul>
+<li>Imagine you’re throwing a party, and you only want your pals to join. Identity and Access Management (IAM) is like the bouncer at the digital door. It decides who gets in and who stays out. Your data, your rules!</li>
+</ul></li>
+<li><p><strong>Following Rules and Best Practices for Security:</strong></p>
+<ul>
+<li>Every digital world has its rules, and cloud security is no different. It’s not just about keeping things safe; it’s about following the playbook. Best practices for security are like the cheat codes to level up your data protection game.</li>
+</ul></li>
+</ul>
+<p>So, whether it’s AWS, Azure, GCP, IBM, or Oracle, and no matter what you’re storing in the cloud – from secret recipes to next-level gaming ideas – keeping it safe is the name of the game. Encrypt it, control who gets the keys, and always play by the rules. That way, your digital world stays your own personal fortress.</p>
+</section>
+<section id="storing-data-in-the-cloud" class="level3" data-number="7.1.5">
+<h3 data-number="7.1.5" class="anchored" data-anchor-id="storing-data-in-the-cloud"><span class="header-section-number">7.1.5</span> Storing Data in the Cloud:</h3>
+<p>Alright, so you’ve got your data in the cloud, but not all data is the same. It’s like sorting your room – different things, different places:</p>
+<ul>
+<li><p><strong>Objects:</strong></p>
+<ul>
+<li>Think of these like digital treasure chests. You toss your files, images, and data into these containers, making it easy to manage and access.</li>
+</ul></li>
+<li><p><strong>Blocks:</strong></p>
+<ul>
+<li>Imagine your data as a bunch of building blocks. These blocks stack up, creating the foundation for your digital creations. It’s like building a virtual Lego masterpiece.</li>
+</ul></li>
+<li><p><strong>Files:</strong></p>
+<ul>
+<li>This one’s like your traditional filing cabinet. You organize your documents neatly, making it easy to find that homework assignment or cat video you saved.</li>
+</ul></li>
+</ul>
+<p>Plus, we’ve got Content Delivery Networks (CDN) in the mix. They’re like the express delivery service of the digital world, making sure your data gets to you lightning-fast.</p>
+</section>
+<section id="connecting-in-the-cloud" class="level3" data-number="7.1.6">
+<h3 data-number="7.1.6" class="anchored" data-anchor-id="connecting-in-the-cloud"><span class="header-section-number">7.1.6</span> Connecting in the Cloud:</h3>
+<p>Now, let’s talk about making connections in this vast digital landscape:</p>
+<ul>
+<li><p><strong>Virtual Private Cloud (VPC):</strong></p>
+<ul>
+<li>It’s like having your private corner in the digital playground. VPC lets you create your own network, keeping your stuff away from the digital nosy neighbors.</li>
+</ul></li>
+<li><p><strong>Load Balancing:</strong></p>
+<ul>
+<li>Imagine you’re juggling a bunch of balls; you want to make sure none drop, right? Load balancing is like the expert juggler, evenly distributing the workload among different servers. It keeps everything running smoothly.</li>
+</ul></li>
+<li><p><strong>Content Delivery Networks (CDN):</strong></p>
+<ul>
+<li>CDNs not only deliver data quickly but also help speed up the delivery of content, like images and videos. It’s like getting your favorite snacks delivered to your doorstep ASAP.</li>
+</ul></li>
+</ul>
+</section>
+<section id="new-trends-in-cloud-computing" class="level3" data-number="7.1.7">
+<h3 data-number="7.1.7" class="anchored" data-anchor-id="new-trends-in-cloud-computing"><span class="header-section-number">7.1.7</span> New Trends in Cloud Computing:</h3>
+<p>Now, let’s check out what’s cooking in the cloud kitchen:</p>
+<ul>
+<li><p><strong>Edge Computing:</strong></p>
+<ul>
+<li>Picture this – instead of sending all your data to a far-off cloud, you process it right where you need it. Edge computing brings the power closer to home, making things faster and more efficient.</li>
+</ul></li>
+<li><p><strong>Using Multiple Cloud Services Together:</strong></p>
+<ul>
+<li>It’s like having a buffet of digital tools. You pick and choose what works best for you. Maybe some AWS for storage, Azure for apps – mix and match for the ultimate tech combo.</li>
+</ul></li>
+<li><p><strong>Quantum Computing Exploration:</strong></p>
+<ul>
+<li>Brace yourselves, tech adventurers! Quantum computing is like entering a whole new dimension. It’s super advanced and can solve problems that regular computers struggle with. We’re talking about next-level computing power here.</li>
+</ul></li>
+</ul>
+<p>So, from organizing your digital treasures to creating your private digital space and riding the waves of cutting-edge tech, the cloud is more than just a storage locker – it’s a digital playground full of endless possibilities.</p>
+</section>
+</section>
+<section id="internet-of-things-iot" class="level2" data-number="7.2">
+<h2 data-number="7.2" class="anchored" data-anchor-id="internet-of-things-iot"><span class="header-section-number">7.2</span> Internet of Things (IoT):</h2>
+<p>By the end of this section, you should be able to:</p>
+<ul>
+<li><p>Define the fundamental concepts of the Internet of Things, including “Things,” Connectivity, Data Processing, and User Interface. Provide real-world examples to illustrate these concepts.</p></li>
+<li><p>Compare and contrast at least three communication protocols used in IoT, such as MQTT, CoAP, and HTTP/HTTPS. Explain the significance of these protocols in facilitating effective communication among IoT devices.</p></li>
+<li><p>Outline three security measures that can be implemented to protect IoT devices and networks. Discuss the importance of respecting user privacy in the design and deployment of IoT solutions.</p></li>
+<li><p>Investigate and present a case study on a specific industry or sector leveraging IoT technology. Highlight the practical uses, benefits, and potential challenges faced in implementing IoT solutions within that context.</p></li>
+<li><p>Explore the implications of 5G networks, the integration of AI and machine learning in IoT, and the concept of edge computing. Assess how these trends may shape the future landscape of IoT and its applications.</p></li>
+</ul>
+<section id="what-is-iot" class="level3" data-number="7.2.1">
+<h3 data-number="7.2.1" class="anchored" data-anchor-id="what-is-iot"><span class="header-section-number">7.2.1</span> What is IoT?</h3>
+<p>So, imagine your fridge, your watch, even your toaster, all chatting away on the internet. That’s IoT – connecting everyday things to the digital dance floor. Here are the main players:</p>
+<ul>
+<li><p><strong>Things:</strong></p>
+<ul>
+<li>These are your everyday objects – from your thermostat to your coffee maker – getting a digital upgrade.</li>
+</ul></li>
+<li><p><strong>Connectivity:</strong></p>
+<ul>
+<li>This is how these things talk to each other and to the internet. It’s like the Wi-Fi wizardry making it all possible.</li>
+</ul></li>
+<li><p><strong>Data Processing:</strong></p>
+<ul>
+<li>All the info these things generate needs sorting and making sense of. That’s where the brainy part comes in, processing the data so it’s useful.</li>
+</ul></li>
+<li><p><strong>User Interface:</strong></p>
+<ul>
+<li>And of course, you need a way to interact with all this cool tech. The user interface is like the control panel, making it easy for you to boss around your smart devices.</li>
+</ul></li>
+</ul>
+</section>
+<section id="how-iot-works" class="level3" data-number="7.2.2">
+<h3 data-number="7.2.2" class="anchored" data-anchor-id="how-iot-works"><span class="header-section-number">7.2.2</span> How IoT Works:</h3>
+<p>Alright, now let’s peek behind the curtain and see how the IoT magic happens:</p>
+<ul>
+<li><p><strong>Devices:</strong></p>
+<ul>
+<li>These are your smart gadgets – sensors, cameras, you name it – collecting data and doing cool stuff.</li>
+</ul></li>
+<li><p><strong>Connectivity:</strong></p>
+<ul>
+<li>The devices need to talk to each other and to the digital cloud. This is where connectivity comes in, making sure everyone’s on the same digital wavelength.</li>
+</ul></li>
+<li><p><strong>Cloud:</strong></p>
+<ul>
+<li>All the data generated by your smart things goes to the cloud for processing and storage. It’s like the grand data hub where everything comes together.</li>
+</ul></li>
+<li><p><strong>Applications:</strong></p>
+<ul>
+<li>Finally, the applications are like the digital maestros, orchestrating how your smart devices behave and what they do.</li>
+</ul></li>
+</ul>
+</section>
+<section id="talking-in-iot" class="level3" data-number="7.2.3">
+<h3 data-number="7.2.3" class="anchored" data-anchor-id="talking-in-iot"><span class="header-section-number">7.2.3</span> Talking in IoT:</h3>
+<p>Now, let’s chat about how these smart devices communicate – it’s like they’ve got their own language:</p>
+<ul>
+<li><p><strong>MQTT, CoAP, HTTP/HTTPS, AMQP:</strong></p>
+<ul>
+<li>These are like the secret codes they use to exchange information. Think of them as the languages your gadgets speak to each other.</li>
+</ul></li>
+<li><p><strong>LoRaWAN, Zigbee:</strong></p>
+<ul>
+<li>And these are like special dialects for specific devices – making sure your smart thermostat understands your smart doorbell without any confusion.</li>
+</ul></li>
+</ul>
+</section>
+<section id="keeping-iot-safe" class="level3" data-number="7.2.4">
+<h3 data-number="7.2.4" class="anchored" data-anchor-id="keeping-iot-safe"><span class="header-section-number">7.2.4</span> Keeping IoT Safe:</h3>
+<p>We’ve got all this tech talk going on, but we need to keep it secure:</p>
+<ul>
+<li><p><strong>Secure Devices, Networks, and Data:</strong></p>
+<ul>
+<li>Locking down your smart devices, making sure the connections are bulletproof, and keeping the data safe – that’s the golden rule.</li>
+</ul></li>
+<li><p><strong>Respecting Privacy:</strong></p>
+<ul>
+<li>Even in this digital dance, privacy matters. Making sure your smart devices aren’t oversharing – that’s part of keeping things cool and respectful.</li>
+</ul></li>
+</ul>
+<p>So, from your toaster to your smartwatch, IoT is like giving everyday things a digital upgrade and connecting them in a tech-savvy symphony.</p>
+</section>
+<section id="platforms-for-iot" class="level3" data-number="7.2.5">
+<h3 data-number="7.2.5" class="anchored" data-anchor-id="platforms-for-iot"><span class="header-section-number">7.2.5</span> Platforms for IoT:</h3>
+<p>So, you’ve got all these cool IoT ideas, but how do you bring them to life? Well, these platforms are like the playgrounds where IoT dreams become reality:</p>
+<ul>
+<li><p><strong>AWS IoT:</strong></p>
+<ul>
+<li>Amazon’s not just about delivering packages; they’ve got a platform dedicated to making your IoT projects soar.</li>
+</ul></li>
+<li><p><strong>Azure IoT:</strong></p>
+<ul>
+<li>Microsoft jumps into the IoT game with Azure, providing a space for your smart devices to collaborate and shine.</li>
+</ul></li>
+<li><p><strong>Oracle IoT:</strong></p>
+<ul>
+<li>has large-scale IoT ecosystems with advanced protective mechanisms that differentiate it from other players on the market</li>
+</ul></li>
+<li><p><strong>Particle IoT:</strong></p>
+<ul>
+<li>The three main ingredients that make up a platform and make it effective are the Particle Photon, responsible for hardware, the Integrated Development Environment (IDE) that ensures proper work of software, and the Particle Cloud, for the Internet.</li>
+</ul></li>
+<li><p><strong>IRI Voracity</strong></p>
+<ul>
+<li>serves as a tool for managing big data. It allows full control and multiple manipulations with data that businesses run daily. The main effort is focused on the collection, sorting, analyzing of information and turning it into a valuable asset</li>
+</ul></li>
+</ul>
+</section>
+<section id="real-uses-of-iot" class="level3" data-number="7.2.6">
+<h3 data-number="7.2.6" class="anchored" data-anchor-id="real-uses-of-iot"><span class="header-section-number">7.2.6</span> Real Uses of IoT:</h3>
+<p>Now that we’ve got the tools, let’s see where people are putting IoT to work in the real world:</p>
+<ul>
+<li><p><strong>Smart Cities:</strong></p>
+<ul>
+<li>Imagine a city where traffic lights know when you’re running late and adjust just for you. That’s the magic of smart cities powered by IoT.</li>
+</ul></li>
+<li><p><strong>Industrial IoT (IIoT):</strong></p>
+<ul>
+<li>Factories becoming smarter, predicting when machines need a break, and optimizing production – that’s IIoT at play.</li>
+</ul></li>
+<li><p><strong>Healthcare IoT:</strong></p>
+<ul>
+<li>Wearable tech monitoring your health, smart pills sending data to your doc – welcome to the future of healthcare.</li>
+</ul></li>
+<li><p><strong>Smart Homes:</strong></p>
+<ul>
+<li>From smart thermostats that know when you’re chilly to fridges that make grocery lists for you – IoT is turning homes into tech havens.</li>
+</ul></li>
+<li><p><strong>Agriculture IoT:</strong></p>
+<ul>
+<li>Farms aren’t left out! IoT helps farmers monitor crops, control irrigation, and even track the health of their livestock.</li>
+</ul></li>
+</ul>
+</section>
+<section id="challenges-with-iot" class="level3" data-number="7.2.7">
+<h3 data-number="7.2.7" class="anchored" data-anchor-id="challenges-with-iot"><span class="header-section-number">7.2.7</span> Challenges with IoT:</h3>
+<p>Of course, with great tech comes great challenges:</p>
+<ul>
+<li><p><strong>Security and Privacy Issues:</strong></p>
+<ul>
+<li>Keeping your smart fridge from sharing your late-night snack habits – that’s the challenge. Privacy and security are always on the front lines.</li>
+</ul></li>
+<li><p><strong>Making Different Devices Work Together:</strong></p>
+<ul>
+<li>It’s like getting a team of superheroes to cooperate – making sure your smartwatch talks nicely to your smart home speaker.</li>
+</ul></li>
+<li><p><strong>Handling a Lot of Data:</strong></p>
+<ul>
+<li>With all these smart devices churning out data, you need big brains (and servers) to handle the load.</li>
+</ul></li>
+</ul>
+</section>
+<section id="whats-next-for-iot" class="level3" data-number="7.2.8">
+<h3 data-number="7.2.8" class="anchored" data-anchor-id="whats-next-for-iot"><span class="header-section-number">7.2.8</span> What’s Next for IoT?:</h3>
+<p>Hold onto your tech hats; the future’s looking even more exciting:</p>
+<ul>
+<li><p><strong>5G Networks for Faster Connections:</strong></p>
+<ul>
+<li>Imagine everything happening in the blink of an eye – that’s what 5G brings to the IoT party, supercharging our connections.</li>
+</ul></li>
+<li><p><strong>Using AI and Machine Learning in IoT:</strong></p>
+<ul>
+<li>Your devices get smarter with AI and machine learning – your smart home might just predict your pizza cravings before you do.</li>
+</ul></li>
+<li><p><strong>Future of IOT in Different Fields:</strong></p>
+<ul>
+<li>With the ability to connect devices, sensors &amp; equipment to the internet, IoT is enabling a new era of data-driven decision making, automation &amp; optimization</li>
+</ul></li>
+<li><p><strong>Processing Data Closer to Where It’s Created (Edge Computing):</strong></p>
+<ul>
+<li>No more sending all that data to the cloud. Edge computing brings the processing power closer to home, making things faster and more efficient.</li>
+</ul></li>
+</ul>
+<p>So, whether you’re dreaming up the next big IoT solution or just excited to see where the tech wave takes us, the Internet of Things is turning the ordinary into the extraordinary.</p>
+</section>
+</section>
+<section id="critical-questions" class="level2" data-number="7.3">
+<h2 data-number="7.3" class="anchored" data-anchor-id="critical-questions"><span class="header-section-number">7.3</span> Critical Questions</h2>
+<section id="cloud-computing-1" class="level3" data-number="7.3.1">
+<h3 data-number="7.3.1" class="anchored" data-anchor-id="cloud-computing-1"><span class="header-section-number">7.3.1</span> Cloud Computing</h3>
+<ol type="1">
+<li><p>How can organizations ensure the security of their data in the cloud, especially considering the different deployment models such as public, private, and hybrid?</p></li>
+<li><p>For businesses considering a move to the cloud, what factors should they weigh in deciding between Infrastructure as a Service (IaaS), Platform as a Service (PaaS), and Software as a Service (SaaS)?</p></li>
+<li><p>In the context of cloud storage and data handling, what are the key considerations for establishing effective data governance policies and ensuring compliance with regulations? When it comes to storing stuff in the cloud, what kind of rules should companies set up?</p></li>
+<li><p>As businesses increasingly adopt multiple cloud services, how can they address challenges related to interoperability and data consistency across different cloud platforms? With everyone using different cloud services, how do they make sure all these play nice together?</p></li>
+<li><p>Considering emerging trends like edge computing, quantum computing exploration, and the use of artificial intelligence in the cloud, how might these advancements shape the future landscape of cloud computing, and what challenges might arise? How’s it shaking up the tech world, and what’s the deal with AI teaming up with the cloud?</p></li>
+</ol>
+</section>
+<section id="internet-of-things" class="level3" data-number="7.3.2">
+<h3 data-number="7.3.2" class="anchored" data-anchor-id="internet-of-things"><span class="header-section-number">7.3.2</span> Internet of Things</h3>
+<ol type="1">
+<li><p>In examining the integration of everyday objects into the digital sphere through IoT, how does this transformative process occur, enabling mundane items to communicate and collaborate over the internet? How do they make everyday stuff talk in the Internet of Things?</p></li>
+<li><p>If one seeks to comprehend the operational intricacies of binding devices, cloud infrastructure, and applications in the realm of IoT, what fundamental principles govern their collective functionality?</p></li>
+</ol>
+<p>Delving into the communication protocols of IoT devices, what significance do languages like MQTT, CoAP, and others hold in facilitating seamless inter-device communication within the Internet of Things? 1. Considering the proliferation of smart devices, what protocols and measures are in place to safeguard the integrity and privacy of IoT ecosystems? How can users ensure the security of their connected devices? With all these smart gadgets around, how do we make sure they stay secure and respect our privacy?</p>
+<ol type="1">
+<li>Exploring real-world applications, how does IoT contribute to the advancement of society, specifically in areas such as Smart Homes, Industrial IoT, and Agriculture IoT? What tangible benefits arise from the integration of IoT technologies in these domains?</li>
+</ol>
+</section>
+</section>
+<section id="assessment-section" class="level2" data-number="7.4">
+<h2 data-number="7.4" class="anchored" data-anchor-id="assessment-section"><span class="header-section-number">7.4</span> Assessment Section</h2>
+<section id="cloud-computing-2" class="level3" data-number="7.4.1">
+<h3 data-number="7.4.1" class="anchored" data-anchor-id="cloud-computing-2"><span class="header-section-number">7.4.1</span> Cloud Computing:</h3>
+<ul>
+<li>Think of an app that you use daily. How was cloud computing incorporated or utilized in its operations? Suggest improvements for the app.</li>
+</ul>
+</section>
+<section id="internet-of-things-iot-1" class="level3" data-number="7.4.2">
+<h3 data-number="7.4.2" class="anchored" data-anchor-id="internet-of-things-iot-1"><span class="header-section-number">7.4.2</span> Internet of Things (IoT):</h3>
+<ul>
+<li>If you were to make something become a smart device, what would it be? What functions will it do? How can society benefit from that innovation?</li>
+</ul>
+</section>
+</section>
+<section id="keywords" class="level2" data-number="7.5">
+<h2 data-number="7.5" class="anchored" data-anchor-id="keywords"><span class="header-section-number">7.5</span> Keywords</h2>
+<section id="cloud-computing-3" class="level3" data-number="7.5.1">
+<h3 data-number="7.5.1" class="anchored" data-anchor-id="cloud-computing-3"><span class="header-section-number">7.5.1</span> Cloud Computing:</h3>
+<ul>
+<li>Cloud Computing, Virtual Machines, Infrastructure as a Service (IaaS), Platform as a Service (PaaS), Software as a Service (SaaS), Public Cloud, Private Cloud, Hybrid Cloud, Community Cloud, Encryption, Identity and Access Management (IAM), Best Practices for Security, Amazon (AWS), Microsoft (Azure), Google (GCP), IBM, Oracle, Encrypting Data, Identity and Access Management (IAM), Security, Best Practices for Security, Objects, Blocks, Files, Content Delivery Networks (CDN), Virtual Private Cloud (VPC), Load Balancing, Content Delivery Networks (CDN), Edge Computing, Using Multiple Cloud Services Together, Quantum Computing</li>
+</ul>
+</section>
+<section id="internet-of-things-iot-2" class="level3" data-number="7.5.2">
+<h3 data-number="7.5.2" class="anchored" data-anchor-id="internet-of-things-iot-2"><span class="header-section-number">7.5.2</span> Internet of Things (IoT):</h3>
+<ul>
+<li>IoT, Connectivity, Things, Data Processing, User Interface, Devices, Connectivity, Cloud, Applications, MQTT, CoAP, HTTP/HTTPS, AMQP, LoRaWAN, Zigbee, Secure Devices, Networks, Data, Privacy, AWS IoT, Azure IoT, Google Cloud IoT, IBM Watson IoT, Smart Cities, Industrial IoT (IIoT), Healthcare IoT, Smart Homes, Agriculture IoT, Security and Privacy Issues, Interoperability, Handling Data, 5G Networks, AI, Machine Learning, Edge Computing</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+    const config = {
+      allowHTML: true,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start',
+    };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            div.style.left = 0;
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chap5_database.html" class="pagination-link  aria-label=" &lt;span="" systems="" and="" data="" management&lt;="" span&gt;"="">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Database Systems and Data Management</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./summary.html" class="pagination-link" aria-label="<span class='chapter-number'>8</span>&nbsp; <span class='chapter-title'>Summary</span>">
+        <span class="nav-page-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Summary</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

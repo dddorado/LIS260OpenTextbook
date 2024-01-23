@@ -2,7 +2,6 @@
 title: "Hardware and Software"
 bibliography: references.bib
 link-citations: true
-format: docx
 documentclass: book
 number-sections: false
 colorlinks: true
@@ -22,7 +21,7 @@ editor: visual
 
 ## Learning Objectives
 
-After studying this chapter, you should be able to:
+*After studying this chapter, you should be able to:*
 
 * Explain the organization of a computing system and understand the relationships and interactions between hardware components.
 * Define the general functions and identify key hardware components, including central processing units (CPUs), memory, and input and output devices.
@@ -87,8 +86,18 @@ Let’s look into probably the most complex component, which is the CPU. The mai
 
 ```{mermaid}
 flowchart LR
-  A[Computer] --> B(CPU)
-  B --> C[Control Unit]
+    Computer["`**Computer**
+    I/O
+    Main Memory
+    System Bus
+    CPU`"]
+    CPU["`**CPU**
+    ALU
+    Registers
+    Internal Bus
+    Control Unit`"]
+    ControlUnit["`**Control Unit**`"]
+    Computer --> CPU --> ControlUnit
 ```
 
 Now that we've delved into the intricacies of computer organization, let's shift our focus to the broader components that constitute it. Let’s examine the contents contained within the confines of the rectangular casing, such as: 
